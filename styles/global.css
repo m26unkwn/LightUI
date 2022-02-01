@@ -1,0 +1,83 @@
+:root {
+  /* color palette */
+  --primary-color: #0070f3;
+  --secondary-color: #7928ca;
+  --danger-color: #d00d65;
+  --warning-color: #f5a623;
+  --success-color: #17c964;
+  --info-color: #03a9f4;
+
+  /*spacing */
+
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.25rem;
+  --spacing-xl: 1.5rem;
+
+  /* font size */
+  --font-size-xs: 0.5rem;
+  --font-size-sm: 1rem;
+  --font-size-md: 1.5rem;
+  --font-size-lg: 2rem;
+  --font-size-xl: 2.5rem;
+}
+
+/* flex styles start */
+
+.flex {
+  display: flex;
+}
+.flex-col {
+  flex-direction: column;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-centered {
+  justify-content: center;
+  align-items: center;
+}
+
+.jc-start {
+  justify-content: flex-start;
+}
+
+.jc-end {
+  justify-content: flex-end;
+}
+
+.jc-between {
+  justify-content: space-between;
+}
+.jc-around {
+  justify-content: space-around;
+}
+
+.jc-evenly {
+  justify-content: space-evenly;
+}
+.jc-center {
+  justify-content: center;
+}
+
+.ai-start {
+  align-items: flex-start;
+}
+
+.ai-end {
+  align-items: flex-end;
+}
+.ai-center {
+  align-items: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-gap {
+  gap: 1rem;
+}
+
+/* flex styles end */
