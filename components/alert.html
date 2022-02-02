@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avatar | Docs</title>
+    <link rel="stylesheet" href="../styles/alert.css" />
+    <link rel="stylesheet" href="../docs.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css"
+      integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <main class="main-wrapper flex flex-col">
+      <!-- navbar starts -->
+
+      <nav class="nav-wrapper">
+        <div class="container nav-inner-wrapper flex ai-center jc-between">
+          <h1 class="nav-logo">LightUI</h1>
+          <div class="nav-items flex flex-centered">
+            <a href="#!">Docs</a>
+            <a href="#!">Github</a>
+          </div>
+        </div>
+      </nav>
+      <!-- navbar end here -->
+
+      <!-- main document starts here -->
+
+      <section class="main-doc container flex ai-start">
+        <!-- sidebar Documentation and components start -->
+
+        <aside class="sidebar flex flex-col ai-start jc-start">
+          <h3 class="nav-heading">Documentation</h3>
+          <span class="divider"></span>
+          <div class="nav-section flex flex-col ai-start">
+            <h4 class="nav-section-heading">Components</h4>
+            <ul class="nav-section-items flex flex-col ai-start">
+              <li>
+                <a href="./avatar.html">Avatar</a>
+              </li>
+              <li>
+                <a class="nav-link-active" href="./alert.html">Alert</a>
+              </li>
+              <li>
+                <a href="./button.html">Button</a>
+              </li>
+              <li>
+                <a href="./badge.html">Badge</a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+        <!-- sidebar Documentation and components start -->
+
+        <!-- Documentation of component starts -->
+
+        <aside class="doc-wrapper">
+          <header class="doc-heading-wrapper flex flex-col">
+            <h1 class="doc-heading">Alert</h1>
+            <p class="doc-desc">
+              An alert displays a short, important message in a way that
+              attracts the user's attention without interrupting the user's
+              task.
+            </p>
+          </header>
+          <section class="doc-preview-wrapper flex flex-col" id="default">
+            <h2 class="doc-preview-heading">Basic Alert</h2>
+            <p class="doc-preview-desc">
+              Simple Alerts can be created using
+              <span class="highlight-text">class alert</span> followed by the
+              <span class="highlight-text">alert-type</span>
+            </p>
+            <div
+              class="doc-preview doc-preview-col flex flex-col ai-center jc-start"
+            >
+              <div class="alert alert-danger">
+                <strong>Error!</strong> This is an Error Alert - Check it now!
+              </div>
+
+              <div class="alert alert-success">
+                <strong>Success!</strong> This is a Success Alert - Check it
+                now!
+              </div>
+
+              <div class="alert alert-warning">
+                <strong>Warning!</strong> This is a Warning Alert - Check it
+                now!
+              </div>
+              <div class="alert alert-info">
+                <strong>Info!</strong> This is a Info Alert - Check it now!
+              </div>
+            </div>
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=sharp&l=htmlmixed&width=736&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-danger%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Cstrong%253EError%21%253C%252Fstrong%253E%2520This%2520is%2520an%2520Error%2520Alert%2520-%2520Check%2520it%2520now%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-success%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cstrong%253ESuccess%21%253C%252Fstrong%253E%2520This%2520is%2520a%2520Success%2520Alert%2520-%2520Check%2520it%2520now%21%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%2520%2520%2520%2520%2520%2520%2520%2520%250A%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-warning%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cstrong%253EWarning%21%253C%252Fstrong%253E%2520This%2520is%2520a%2520Warning%2520Alert%2520-%2520Check%2520it%2520now%21%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-info%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cstrong%253EInfo%21%253C%252Fstrong%253E%2520This%2520is%2520a%2520Info%2520Alert%2520-%2520Check%2520it%2520now%21%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A"
+              style="
+                width: 100%;
+                height: 419px;
+                margin-top: var(--spacing-md);
+                border: 2px solid rgb(221, 221, 221);
+                border-radius: 10px;
+                padding: var(--spacing-xl) var(--spacing-md);
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </section>
+          <section class="doc-preview-wrapper flex flex-col" id="sizes">
+            <h2 class="doc-preview-heading">Outlined</h2>
+            <p class="doc-preview-desc">
+              Outline alerts are created by using
+              <span class="highlight-text">class alert</span> followed by
+              <span class="highlight-text">outline-type</span>
+            </p>
+            <div
+              class="doc-preview doc-preview-col flex flex-col ai-center jc-start"
+            >
+              <div class="alert outline-danger">
+                <strong>Error!</strong> This is an Error Alert - Check it now!
+              </div>
+
+              <div class="alert outline-success">
+                <strong>Success!</strong> This is a Success Alert - Check it
+                now!
+              </div>
+
+              <div class="alert outline-warning">
+                <strong>Warning!</strong> This is a Warning Alert - Check it
+                now!
+              </div>
+              <div class="alert outline-info">
+                <strong>Info!</strong> This is a Info Alert - Check it now!
+              </div>
+            </div>
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=sharp&l=htmlmixed&width=736&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520outline-danger%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Cstrong%253EError%21%253C%252Fstrong%253E%2520This%2520is%2520an%2520Error%2520Alert%2520-%2520Check%2520it%2520now%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520outline-success%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cstrong%253ESuccess%21%253C%252Fstrong%253E%2520This%2520is%2520a%2520Success%2520Alert%2520-%2520Check%2520it%2520now%21%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%2520%2520%2520%2520%2520%2520%2520%2520%250A%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520outline-warning%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cstrong%253EWarning%21%253C%252Fstrong%253E%2520This%2520is%2520a%2520Warning%2520Alert%2520-%2520Check%2520it%2520now%21%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520outline-info%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cstrong%253EInfo%21%253C%252Fstrong%253E%2520This%2520is%2520a%2520Info%2520Alert%2520-%2520Check%2520it%2520now%21%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A"
+              style="
+                width: 100%;
+                height: 419px;
+                margin-top: var(--spacing-md);
+                border: 2px solid rgb(221, 221, 221);
+                border-radius: 10px;
+                padding: var(--spacing-xl) var(--spacing-md);
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </section>
+        </aside>
+        <!-- Documentation of component ends -->
+      </section>
+      <!-- main document ends here -->
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>
