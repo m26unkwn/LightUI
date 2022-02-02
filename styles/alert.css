@@ -4,7 +4,7 @@
   width: 100%;
   padding: var(--spacing-md) var(--spacing-md);
   background-color: var(--primary-color);
-  color: #fff;
+  color: var(--white-color);
   border-radius: 4px;
   font-size: 0.8rem;
 }
@@ -24,24 +24,24 @@
 }
 
 .outline-danger {
-  background-color: #fff;
+  background-color: var(--white-color);
   border: 1px solid var(--danger-color);
   color: var(--danger-color);
 }
 
 .outline-info {
-  background-color: #fff;
+  background-color: var(--white-color);
   border: 1px solid var(--info-color);
   color: var(--info-color);
 }
 
 .outline-success {
-  background-color: #fff;
+  background-color: var(--white-color);
   border: 1px solid var(--success-color);
   color: var(--success-color);
 }
 .outline-warning {
-  background-color: #fff;
+  background-color: var(--white-color);
   border: 1px solid var(--warning-color);
   color: var(--warning-color);
 }
