@@ -175,6 +175,70 @@ body {
 
 /* spacing for badge icon end */
 
+/* landing page hero section */
+
+.hero-main {
+  width: 64rem;
+  margin: 0 auto;
+}
+.hero {
+  padding-top: 8rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  min-height: 100vh;
+}
+
+.hero-large-text {
+  text-align: center;
+  font-size: 3.75rem;
+  font-weight: 700;
+  color: #333333;
+  line-height: 1.07;
+  letter-spacing: -0.025em;
+}
+
+.hero-highlight-text {
+  background-image: linear-gradient(
+    var(--secondary-color) 25%,
+    rgb(178, 73, 248) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-prime-color {
+  background-image: linear-gradient(
+    var(--primary-color) 25%,
+    rgb(73, 169, 248) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-desc {
+  text-align: center;
+  font-size: var(--font-size-sm);
+}
+.hero-btn {
+  text-align: center;
+}
+.btn {
+  padding: var(--spacing-sm) var(--spacing-lg);
+  width: 40%;
+  font-size: var(--font-size-lg);
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-image: linear-gradient(
+    var(--primary-color) 25%,
+    var(--secondary-color) 100%
+  );
+  -webkit-text-fill-color: #fff;
+}
+
 @media (max-width: 1000px) {
   .nav-wrapper {
     padding: 0 1rem;
@@ -187,5 +251,24 @@ body {
     left: 0;
     top: 0;
     z-index: -1;
+  }
+  .hero-main {
+    width: 100%;
+  }
+  .hero {
+    padding-top: 8rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    min-height: 100vh;
+    position: relative;
+  }
+
+  .hero-large-text {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    letter-spacing: -0.025em;
+  }
+  .btn {
+    width: 80%;
   }
 }
