@@ -219,11 +219,11 @@ body {
   text-align: center;
   font-size: var(--font-size-sm);
 }
-.hero-btn {
+.hero-btn-section {
   text-align: center;
 }
-.btn {
-  padding: var(--spacing-sm) var(--spacing-lg);
+.hero-btn {
+  padding: 0.5em;
   width: 40%;
   font-size: var(--font-size-lg);
   background: var(--primary-color);
