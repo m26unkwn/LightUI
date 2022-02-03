@@ -202,7 +202,7 @@ body {
     var(--secondary-color) 25%,
     rgb(178, 73, 248) 100%
   );
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -211,8 +211,6 @@ body {
     var(--primary-color) 25%,
     rgb(73, 169, 248) 100%
   );
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .hero-desc {
