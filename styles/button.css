@@ -157,3 +157,17 @@
   text-decoration: underline;
   color: #ffff;
 }
+
+/* float action button */
+
+.btn-float {
+  padding: 0.5rem;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 25px -8px rgba(106, 122, 135, 1);
+  -moz-box-shadow: 0px 0px 25px -8px rgba(106, 122, 135, 1);
+  box-shadow: 0px 0px 25px -8px rgba(106, 122, 135, 1);
+}
+
+.btn-float:hover {
+  border: 1px solid var(--secondary-color);
+}
