@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Button | Docs</title>
+    <link rel="stylesheet" href="../styles/button.css" />
+    <link rel="stylesheet" href="../docs.css" />
+  </head>
+  <body>
+    <main class="main-wrapper flex flex-col">
+      <!-- navbar starts here -->
+      <nav class="nav-wrapper">
+        <div class="container nav-inner-wrapper flex ai-center jc-between">
+          <h1 class="nav-logo">LightUI</h1>
+          <div class="nav-items flex flex-centered">
+            <a href="#!">Docs</a>
+            <a href="#!">Github</a>
+          </div>
+        </div>
+      </nav>
+      <!-- navbar end here -->
+
+      <!-- main document starts here -->
+
+      <section class="main-doc container flex ai-start">
+        <!-- sidebar Documentation and components start -->
+
+        <aside class="sidebar flex flex-col ai-start jc-start">
+          <h3 class="nav-heading">Documentation</h3>
+          <span class="divider"></span>
+
+          <div class="nav-section flex flex-col ai-start">
+            <h4 class="nav-section-heading">Components</h4>
+            <ul class="nav-section-items flex flex-col ai-start">
+              <li>
+                <a href="./avatar.html">Avatar</a>
+              </li>
+              <li>
+                <a href="./alert.html">Alert</a>
+              </li>
+              <li>
+                <a class="nav-link-active" href="./button.html">Button</a>
+              </li>
+              <li>
+                <a href="./badge.html">Badge</a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+
+        <!-- sidebar Documentation and components start -->
+
+        <!-- Documentation of component starts -->
+
+        <aside class="doc-wrapper">
+          <header class="doc-heading-wrapper flex flex-col">
+            <h1 class="doc-heading">Button</h1>
+            <p class="doc-desc">
+              Buttons allow users to perform actions and make choices with a
+              single tap.
+            </p>
+          </header>
+          <section class="doc-preview-wrapper flex flex-col" id="default">
+            <h2 class="doc-preview-heading">Default</h2>
+            <p class="doc-preview-desc">
+              Defualt <span class="highlight-text">Button</span> is a simple
+              button with class <span class="highlight-text"> btn</span>.
+            </p>
+            <div
+              class="doc-preview doc-preview-row flex ai-center jc-start flex-wrap flex-gap"
+            >
+              <button class="btn">default</button>
+            </div>
+
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=sharp&l=htmlmixed&width=514&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%2509%2509%250A%250A%2509%2509%253Cbutton%2520class%253D%2522btn%2522%253Edefault%253C%252Fbutton%253E%250A%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+              style="
+                width: 100%;
+                height: 227px;
+                margin-top: var(--spacing-md);
+                border: 2px solid rgb(221, 221, 221);
+                border-radius: 10px;
+                padding: var(--spacing-xl) var(--spacing-md);
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </section>
+
+          <section class="doc-preview-wrapper flex flex-col" id="sizes">
+            <h2 class="doc-preview-heading">Sizes</h2>
+            <p class="doc-preview-desc">
+              The <span class="highlight-text">Button</span> comes in 5 sizes
+              with
+              <span class="highlight-text">xs</span>
+              <span class="highlight-text">sm</span>
+              <span class="highlight-text">md</span>
+              <span class="highlight-text">lg</span>
+              and
+              <span class="highlight-text">xl</span>.
+            </p>
+            <div
+              class="doc-preview doc-preview-row flex ai-center jc-start flex-wrap flex-gap"
+            >
+              <button class="btn btn-xs">Button</button>
+              <button class="btn btn-sm">Button</button>
+              <button class="btn btn-md">Button</button>
+              <button class="btn btn-lg">Button</button>
+              <button class="btn btn-xl">Button</button>
+            </div>
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=sharp&l=htmlmixed&width=514&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-xs%2522%253EButton%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-sm%2522%253EButton%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-md%2522%253EButton%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-lg%2522%253EButton%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-xl%2522%253EButton%253C%252Fbutton%253E%250A%250A%250A"
+              style="
+                width: 100%;
+                height: 227px;
+                margin-top: var(--spacing-md);
+                border: 2px solid rgb(221, 221, 221);
+                border-radius: 10px;
+                padding: var(--spacing-xl) var(--spacing-md);
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </section>
+          <section class="doc-preview-wrapper flex flex-col" id="squared">
+            <h2 class="doc-preview-heading">Contained Button</h2>
+            <p class="doc-preview-desc">
+              Contained buttons are high-emphasis, distinguished by their use of
+              elevation and fill. They contain actions that are primary to your
+              app. You can change the type of the button using class
+              <span class="highlight-text">btn</span> and
+              <span class="highlight-text">btn-type</span>.
+            </p>
+
+            <div
+              class="doc-preview-row doc-preview flex ai-center jc-start flex-wrap flex-gap"
+            >
+              <button class="btn">Primary</button>
+              <button class="btn btn-secondary">Secondary</button>
+              <button disabled class="btn btn-disabled">Disabled</button>
+              <button class="btn btn-error">Error</button>
+              <button class="btn btn-success">Success</button>
+              <button class="btn btn-warning">Warning</button>
+            </div>
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=sharp&l=htmlmixed&width=696&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2522%253EPrimary%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2522%253ESecondary%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520disabled%2520class%253D%2522btn%2520btn-disabled%2522%253ESecondary%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-error%2522%253EError%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-success%2522%253EError%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-warning%2522%253EWarning%253C%252Fbutton%253E%250A%250A"
+              style="
+                width: 100%;
+                height: 250px;
+                margin-top: var(--spacing-md);
+                border: 2px solid rgb(221, 221, 221);
+                border-radius: 10px;
+                padding: var(--spacing-xl) var(--spacing-md);
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </section>
+          <section class="doc-preview-wrapper flex flex-col" id="squared">
+            <h2 class="doc-preview-heading">Outlined Button</h2>
+            <p class="doc-preview-desc">
+              Contained buttons are high-emphasis, distinguished by their use of
+              elevation and fill. They contain actions that are primary to your
+              app. You can change the type of the button using class
+              <span class="highlight-text">btn</span> and
+              <span class="highlight-text">outline-type</span>.
+            </p>
+
+            <div
+              class="doc-preview-row doc-preview flex ai-center jc-start flex-wrap flex-gap"
+            >
+              <button class="btn outline-primary">Primary</button>
+              <button class="btn outline-secondary">Secondary</button>
+              <button class="btn outline-error">Error</button>
+              <button class="btn oultine-success">Success</button>
+              <button class="btn outline-warning">Warning</button>
+            </div>
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=sharp&l=htmlmixed&width=696&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%2509%2509%253Cbutton%2520class%253D%2522btn%2520outline-primary%2522%253EPrimary%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520outline-secondary%2522%253ESecondary%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520outline-error%2522%253EError%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520oultine-success%2522%253ESuccess%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520outline-warning%2522%253EWarning%253C%252Fbutton%253E%250A%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+              style="
+                width: 100%;
+                height: 250px;
+                margin-top: var(--spacing-md);
+                border: 2px solid rgb(221, 221, 221);
+                border-radius: 10px;
+                padding: var(--spacing-xl) var(--spacing-md);
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </section>
+          <section class="doc-preview-wrapper flex flex-col" id="squared">
+            <h2 class="doc-preview-heading">Icon Button</h2>
+            <p class="doc-preview-desc">
+              Icon Buttons can be created, by using a SVG as a child to parent
+              button. Use the class
+              <span class="highlight-text">btn</span> followed by
+              <span class="highlight-text">btn-icon</span>.
+            </p>
+            <p class="doc-preview-desc">
+              You can use class<span class="highlight-text">icon-text</span>
+              while using <span class="highlight-text">icon</span> and
+              <span class="highlight-text">text</span> together.
+            </p>
+
+            <p class="doc-preview-desc">
+              You can also use
+              <span class="highlight-text">background color</span> while using
+              class<span class="highlight-text">icon-primary-color</span>,
+              <span class="highlight-text">icon-secondary-color</span>,<span
+                class="highlight-text"
+                >icon-red-color</span
+              >
+              and <span class="highlight-text">icon-warning-color</span>.
+            </p>
+
+            <div
+              class="doc-preview-row doc-preview flex ai-center jc-start flex-wrap flex-gap"
+            >
+              <button class="btn btn-icon icon-red-color">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="24"
+                  fill="#fffff"
+                  viewBox="0 0 20 19"
+                >
+                  <g id="Heart" transform="translate(0 0)">
+                    <path
+                      id="Path"
+                      d="M15.71.29A5.842,5.842,0,0,0,13.85,0,6.263,6.263,0,0,0,10,1.3a3.041,3.041,0,0,0-.3-.189C9.6,1.049,9.42.9,9.27.82L8.89.65A3.526,3.526,0,0,0,8.26.389.349.349,0,0,0,8.17.33H8.111A6.237,6.237,0,0,0,6.28,0H6.17a5.8,5.8,0,0,0-.84.06H5.21a4.519,4.519,0,0,0-.889.209C.59,1.49-.74,5.54.39,9.08a12.933,12.933,0,0,0,3.011,4.8,38.094,38.094,0,0,0,6.369,4.96l.26.161.25-.151a38.456,38.456,0,0,0,6.331-4.96A12.728,12.728,0,0,0,19.62,9.08C20.731,5.54,19.4,1.49,15.71.29Z"
+                      fill="#fffff"
+                    />
+                  </g>
+                </svg>
+              </button>
+              <button class="btn btn-icon icon-primary">
+                <svg
+                  width="25"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M14.1213 11.2331H16.8891C17.3088 11.2331 17.6386 10.8861 17.6386 10.4677C17.6386 10.0391 17.3088 9.70236 16.8891 9.70236H14.1213C13.7016 9.70236 13.3719 10.0391 13.3719 10.4677C13.3719 10.8861 13.7016 11.2331 14.1213 11.2331ZM20.1766 5.92749C20.7861 5.92749 21.1858 6.1418 21.5855 6.61123C21.9852 7.08067 22.0551 7.7542 21.9652 8.36549L21.0159 15.06C20.8361 16.3469 19.7569 17.2949 18.4879 17.2949H7.58639C6.25742 17.2949 5.15828 16.255 5.04837 14.908L4.12908 3.7834L2.62026 3.51807C2.22057 3.44664 1.94079 3.04864 2.01073 2.64043C2.08068 2.22305 2.47038 1.94649 2.88006 2.00874L5.2632 2.3751C5.60293 2.43735 5.85274 2.72207 5.88272 3.06905L6.07257 5.35499C6.10254 5.68257 6.36234 5.92749 6.68209 5.92749H20.1766ZM7.42631 18.9079C6.58697 18.9079 5.9075 19.6018 5.9075 20.459C5.9075 21.3061 6.58697 22 7.42631 22C8.25567 22 8.93514 21.3061 8.93514 20.459C8.93514 19.6018 8.25567 18.9079 7.42631 18.9079ZM18.6676 18.9079C17.8282 18.9079 17.1487 19.6018 17.1487 20.459C17.1487 21.3061 17.8282 22 18.6676 22C19.4969 22 20.1764 21.3061 20.1764 20.459C20.1764 19.6018 19.4969 18.9079 18.6676 18.9079Z"
+                    fill="#fffff"
+                  />
+                </svg>
+              </button>
+              <button class="btn btn-icon icon-primary">
+                <svg
+                  width="25"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M2 12.015C2 6.74712 6.21 2 12.02 2C17.7 2 22 6.65699 22 11.985C22 18.1642 16.96 22 12 22C10.36 22 8.54 21.5593 7.08 20.698C6.57 20.3876 6.14 20.1572 5.59 20.3375L3.57 20.9384C3.06 21.0986 2.6 20.698 2.75 20.1572L3.42 17.9139C3.53 17.6034 3.51 17.2729 3.35 17.0125C2.49 15.4301 2 13.6975 2 12.015ZM10.7 12.015C10.7 12.7261 11.27 13.2969 11.98 13.307C12.69 13.307 13.26 12.7261 13.26 12.025C13.26 11.314 12.69 10.7431 11.98 10.7431C11.28 10.7331 10.7 11.314 10.7 12.015ZM15.31 12.025C15.31 12.7261 15.88 13.307 16.59 13.307C17.3 13.307 17.87 12.7261 17.87 12.025C17.87 11.314 17.3 10.7431 16.59 10.7431C15.88 10.7431 15.31 11.314 15.31 12.025ZM7.37 13.307C6.67 13.307 6.09 12.7261 6.09 12.025C6.09 11.314 6.66 10.7431 7.37 10.7431C8.08 10.7431 8.65 11.314 8.65 12.025C8.65 12.7261 8.08 13.2969 7.37 13.307Z"
+                  ></path>
+                </svg>
+              </button>
+              <button class="btn btn-icon icon-warning-color icon-text">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24px"
+                  height="24px"
+                  viewBox="0 0 24 24"
+                >
+                  <g transform="translate(2 1.999)">
+                    <path
+                      d="M10,20a10,10,0,1,1,7.074-2.929A10.011,10.011,0,0,1,10,20Zm0-7.069a.871.871,0,0,0-.87.869.875.875,0,1,0,.87-.869Zm0-7.6a.892.892,0,0,0-.88.88v4.42a.875.875,0,0,0,1.751,0V6.21A.876.876,0,0,0,10,5.33Z"
+                    ></path>
+                  </g>
+                </svg>
+                <span>Warning</span>
+              </button>
+              <button class="btn btn-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25px"
+                  height="24px"
+                  viewBox="0 0 24 24"
+                >
+                  <g transform="translate(3.5 2)">
+                    <path
+                      d="M7.983,19.967a3.619,3.619,0,0,1-1.714-.733,1.551,1.551,0,0,1-.7-1.173c0-.5.462-.734.889-.833a25.955,25.955,0,0,1,4.046,0c.427.1.889.329.889.833a1.553,1.553,0,0,1-.695,1.174,3.635,3.635,0,0,1-1.713.732A4,4,0,0,1,8.48,20,3.667,3.667,0,0,1,7.983,19.967ZM3.764,15.747a4.535,4.535,0,0,1-2.9-1.413A3.615,3.615,0,0,1,0,11.956a3.368,3.368,0,0,1,.731-2.31A3.8,3.8,0,0,0,1.794,6.8V6.37A5.625,5.625,0,0,1,3.077,2.512,7.073,7.073,0,0,1,8.456,0h.09a7.041,7.041,0,0,1,5.467,2.624,5.546,5.546,0,0,1,1.2,3.746V6.8a3.889,3.889,0,0,0,1.062,2.849A3.364,3.364,0,0,1,17,11.956a3.614,3.614,0,0,1-.863,2.379,4.539,4.539,0,0,1-2.9,1.413c-1.571.133-3.144.247-4.737.247A41.689,41.689,0,0,1,3.764,15.747Z"
+                    ></path>
+                  </g>
+                </svg>
+              </button>
+            </div>
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=sharp&l=htmlmixed&width=696&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%2509%253Cbutton%2520class%253D%2522btn%2520btn-icon%2520icon-red-color%2522%253E%253Csvg%253Eicon%253C%252Fsvg%253E%253C%252Fbutton%253E%250A%2509%250A%2509%253Cbutton%2520class%253D%2522btn%2520btn-icon%2520icon-text%2522%253E%253Csvg%253Eicon%253C%252Fsvg%253E%2520text%253C%252Fbutton%253E%250A%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+              style="
+                width: 100%;
+                height: 250px;
+                margin-top: var(--spacing-md);
+                border: 2px solid rgb(221, 221, 221);
+                border-radius: 10px;
+                padding: var(--spacing-xl) var(--spacing-md);
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </section>
+          <section class="doc-preview-wrapper flex flex-col" id="squared">
+            <h2 class="doc-preview-heading">Link Button</h2>
+            <p class="doc-preview-desc">
+              Contained buttons are high-emphasis, distinguished by their use of
+              elevation and fill. They contain actions that are primary to your
+              app. You can change the type of the button using class
+              <span class="highlight-text">btn</span> and
+              <span class="highlight-text">btn-type</span>.
+            </p>
+
+            <div
+              class="doc-preview-row doc-preview flex ai-center jc-start flex-wrap flex-gap"
+            >
+              <button class="btn">
+                <a href="!#" class="btn-link">Button</a>
+              </button>
+
+              <button class="btn btn-icon icon-primary-color icon-text">
+                <svg
+                  width="25"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M14.1213 11.2331H16.8891C17.3088 11.2331 17.6386 10.8861 17.6386 10.4677C17.6386 10.0391 17.3088 9.70236 16.8891 9.70236H14.1213C13.7016 9.70236 13.3719 10.0391 13.3719 10.4677C13.3719 10.8861 13.7016 11.2331 14.1213 11.2331ZM20.1766 5.92749C20.7861 5.92749 21.1858 6.1418 21.5855 6.61123C21.9852 7.08067 22.0551 7.7542 21.9652 8.36549L21.0159 15.06C20.8361 16.3469 19.7569 17.2949 18.4879 17.2949H7.58639C6.25742 17.2949 5.15828 16.255 5.04837 14.908L4.12908 3.7834L2.62026 3.51807C2.22057 3.44664 1.94079 3.04864 2.01073 2.64043C2.08068 2.22305 2.47038 1.94649 2.88006 2.00874L5.2632 2.3751C5.60293 2.43735 5.85274 2.72207 5.88272 3.06905L6.07257 5.35499C6.10254 5.68257 6.36234 5.92749 6.68209 5.92749H20.1766ZM7.42631 18.9079C6.58697 18.9079 5.9075 19.6018 5.9075 20.459C5.9075 21.3061 6.58697 22 7.42631 22C8.25567 22 8.93514 21.3061 8.93514 20.459C8.93514 19.6018 8.25567 18.9079 7.42631 18.9079ZM18.6676 18.9079C17.8282 18.9079 17.1487 19.6018 17.1487 20.459C17.1487 21.3061 17.8282 22 18.6676 22C19.4969 22 20.1764 21.3061 20.1764 20.459C20.1764 19.6018 19.4969 18.9079 18.6676 18.9079Z"
+                    fill="#fffff"
+                  />
+                </svg>
+                <a href="!#" class="btn-link">Cart</a>
+              </button>
+            </div>
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=sharp&l=htmlmixed&width=792&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2522%253E%253Ca%2520href%253D%2522%21%2523%2522%2520class%253D%2522btn-link%2522%253EButton%253C%252Fa%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-icon%2520icon-text%2522%253Eicon%253Ca%2520class%253D%2522btn-link%2522%253ECart%253C%252Fa%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+              style="
+                width: 100%;
+                height: 180px;
+                margin-top: var(--spacing-md);
+                border: 2px solid rgb(221, 221, 221);
+                border-radius: 10px;
+                padding: var(--spacing-xl) var(--spacing-md);
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </section>
+        </aside>
+        <!-- Documentation of component starts -->
+      </section>
+      <!-- main document ends here -->
+    </main>
+  </body>
+</html>
