@@ -17,7 +17,7 @@
   background-color: var(--primary-color);
   object-fit: cover;
   object-position: center;
-  color: var(--color-white);
+  color: var(--white-color);
   overflow: hidden;
 }
 
