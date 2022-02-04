@@ -1,0 +1,95 @@
+@import "./global.css";
+
+:root {
+  /* status */
+  --online-status: var(--success-color);
+  --offline-status: grey;
+  --dnd-status: var(--danger-color);
+  --badge-dot-width: 0.75rem;
+  --badge-dot-height: 0.75rem;
+  --badge-num-width: 1.5rem;
+  --badge-num-height: 1.5rem;
+}
+
+/* badge class */
+.badge {
+  position: relative;
+}
+
+/* badge position */
+
+.badge-dot-size {
+  width: var(--badge-dot-width);
+  height: var(--badge-dot-height);
+}
+
+.badge-pos-bottom-right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  border: 2px solid #ffff;
+}
+
+.badge-pos-bottom-left {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 50%;
+  border: 2px solid #ffff;
+}
+
+.badge-pos-top-left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  border: 2px solid #ffff;
+}
+.badge-pos-top-right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 50%;
+  border: 2px solid #ffff;
+}
+
+/* avatar status */
+
+.online {
+  background: var(--online-status);
+}
+
+.offline {
+  background: var(--offline-status);
+}
+
+.dnd {
+  background: var(--dnd-status);
+}
+
+/* number badge */
+.badge-num-size {
+  width: var(--badge-num-width);
+  height: var(--badge-num-height);
+}
+.badge-num-pos {
+  position: absolute;
+  text-align: center;
+  left: 80%;
+  top: -10%;
+  border: 2px solid #ffff;
+  color: #ffff;
+  font-size: calc(var(--font-size-xs) + 0.25rem);
+  background: var(--dnd-status);
+}
+
+/* shapes */
+
+.square {
+  border-radius: 40%;
+}
+
+.circle {
+  border-radius: 50%;
+}
