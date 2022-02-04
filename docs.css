@@ -199,6 +199,7 @@ body {
     var(--secondary-color) 25%,
     rgb(178, 73, 248) 100%
   );
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -255,4 +256,5 @@ body {
     top: 0;
     z-index: -1;
   }
+
 }
