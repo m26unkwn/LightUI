@@ -1,0 +1,77 @@
+@import "./global.css";
+
+:root {
+  --input-color: #333333;
+}
+
+/* input container */
+
+.input-field {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.input-field > label {
+  margin-left: 3px;
+  color: var(--input-color);
+}
+
+.input-field > input {
+  all: unset;
+  color: var(--input-color);
+
+  padding: var(--spacing-sm);
+  border-radius: 10px;
+  border: 2px solid var(--border-color);
+}
+
+.input-field > input:focus {
+  border: 2px solid var(--primary-color);
+}
+
+/* input error */
+
+.input-error > input {
+  border: 2px solid var(--danger-color);
+}
+.input-error > input:focus {
+  border: 2px solid var(--danger-color);
+}
+
+/* input sucess */
+
+.input-success > input {
+  border: 2px solid var(--success-color);
+}
+.input-success > input:focus {
+  border: 2px solid var(--success-color);
+}
+
+.input-field > textarea {
+  all: unset;
+  padding: var(--spacing-sm);
+  border-radius: 10px;
+  border: 2px solid var(--border-color);
+}
+
+.input-field > textarea:focus {
+  border: 2px solid var(--primary-color);
+}
+
+.imp-input {
+  color: var(--danger-color);
+}
+
+.error-color {
+  color: var(--danger-color);
+}
+
+.sucess-color {
+  color: var(--success-color);
+}
+
+.alert-text {
+  font-size: 0.8rem;
+}
