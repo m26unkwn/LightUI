@@ -1,0 +1,13 @@
+@import "./global.css";
+
+.img-round {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
