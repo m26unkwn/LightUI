@@ -2,6 +2,7 @@
 
 :root {
   --input-color: #333333;
+  --error-color: #f21361;
 }
 
 /* input container */
@@ -34,10 +35,10 @@
 /* input error */
 
 .input-error > input {
-  border: 2px solid var(--danger-color);
+  border: 2px solid var(--error-color);
 }
 .input-error > input:focus {
-  border: 2px solid var(--danger-color);
+  border: 2px solid var(--error-color);
 }
 
 /* input sucess */
@@ -61,14 +62,14 @@
 }
 
 .imp-input {
-  color: var(--danger-color);
+  color: var(--error-color);
 }
 
 .error-color {
-  color: var(--danger-color);
+  color: var(--error-color);
 }
 
-.sucess-color {
+.success-color {
   color: var(--success-color);
 }
 
