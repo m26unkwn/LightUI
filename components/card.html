@@ -249,7 +249,7 @@
           <section class="doc-preview-wrapper flex flex-col" id="default">
             <h2 class="doc-preview-heading">Vertical Product Card</h2>
             <p class="doc-preview-desc">
-              Product card has two variation by default horizontal card and
+              Product card has two variationd by default horizontal card and
               vertical card.
             </p>
             <p class="doc-preview-desc">
@@ -264,9 +264,31 @@
               and for image
               <span class="highlight-text">vertical-card-img</span>.
             </p>
-
+            <p class="doc-preview-desc">
+              You can also add badge using class
+              <span class="highlight-text">badge</span>
+              .
+            </p>
             <div class="doc-preview doc-preview-row flex ai-center jc-center">
               <div class="pd-card-container vertical">
+                <div class="badge">
+                  <svg
+                    id="Iconly_Bold_Heart"
+                    data-name="Iconly/Bold/Heart"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="19"
+                    viewBox="0 0 20 19"
+                  >
+                    <g id="Heart" transform="translate(0 0)">
+                      <path
+                        id="Path"
+                        d="M15.71.29A5.842,5.842,0,0,0,13.85,0,6.263,6.263,0,0,0,10,1.3a3.041,3.041,0,0,0-.3-.189C9.6,1.049,9.42.9,9.27.82L8.89.65A3.526,3.526,0,0,0,8.26.389.349.349,0,0,0,8.17.33H8.111A6.237,6.237,0,0,0,6.28,0H6.17a5.8,5.8,0,0,0-.84.06H5.21a4.519,4.519,0,0,0-.889.209C.59,1.49-.74,5.54.39,9.08a12.933,12.933,0,0,0,3.011,4.8,38.094,38.094,0,0,0,6.369,4.96l.26.161.25-.151a38.456,38.456,0,0,0,6.331-4.96A12.728,12.728,0,0,0,19.62,9.08C20.731,5.54,19.4,1.49,15.71.29Z"
+                        fill="var(--danger-color)"
+                      />
+                    </g>
+                  </svg>
+                </div>
                 <div class="card-img-wrapper vertical-img">
                   <img
                     class="card-img vertical-card-img"
@@ -339,51 +361,53 @@
 
             <div class="doc-preview doc-preview-row flex ai-center jc-center">
               <div class="pd-card-container vertical">
-                <div class="card-img-wrapper vertical-img">
-                  <img
-                    class="card-img vertical-card-img"
-                    src="../assets/product_1.jpg"
-                  />
+                <div class="card-overlay">
+                  <div class="card-img-wrapper vertical-img">
+                    <img
+                      class="card-img vertical-card-img"
+                      src="../assets/product_1.jpg"
+                    />
+                  </div>
+                  <div class="pd-content">
+                    <h1 class="pd-heading">Classic Utility Jacket</h1>
+                    <p class="pd-desc">Style, Modern, new-season.</p>
+                    <div class="pd-price">
+                      <p class="crnt-price">$200</p>
+                      <p class="prev-price">$350</p>
+                      <p class="discount">30% off</p>
+                    </div>
+                    <div class="pd-size">
+                      <div class="radio-btn">
+                        <input type="radio" name="size" value="XS" />
+                        <label for="XS">XS</label>
+                      </div>
+                      <div class="radio-btn">
+                        <input type="radio" name="size" value="S" />
+                        <label for="S">S</label>
+                      </div>
+                      <div class="radio-btn">
+                        <input type="radio" name="size" value="M" />
+                        <label for="M">M</label>
+                      </div>
+                      <div class="radio-btn">
+                        <input type="radio" name="size" value="L" />
+                        <label for="L">L</label>
+                      </div>
+                      <div class="radio-btn">
+                        <input type="radio" name="size" value="XL" />
+                        <label for="XL">XL</label>
+                      </div>
+                    </div>
+                    <div class="card-divider"></div>
+                    <div class="pd-card-action">
+                      <button class="btn btn-md">Buy Now</button>
+                      <button class="btn btn-md outline-primary">
+                        Add To Cart
+                      </button>
+                    </div>
+                  </div>
                 </div>
-                <div class="pd-content">
-                  <h1 class="pd-heading">Classic Utility Jacket</h1>
-                  <p class="pd-desc">Style, Modern, new-season.</p>
-                  <div class="pd-price">
-                    <p class="crnt-price">$200</p>
-                    <p class="prev-price">$350</p>
-                    <p class="discount">30% off</p>
-                  </div>
-                  <div class="pd-size">
-                    <div class="radio-btn">
-                      <input type="radio" name="size" value="XS" />
-                      <label for="XS">XS</label>
-                    </div>
-                    <div class="radio-btn">
-                      <input type="radio" name="size" value="S" />
-                      <label for="S">S</label>
-                    </div>
-                    <div class="radio-btn">
-                      <input type="radio" name="size" value="M" />
-                      <label for="M">M</label>
-                    </div>
-                    <div class="radio-btn">
-                      <input type="radio" name="size" value="L" />
-                      <label for="L">L</label>
-                    </div>
-                    <div class="radio-btn">
-                      <input type="radio" name="size" value="XL" />
-                      <label for="XL">XL</label>
-                    </div>
-                  </div>
-                  <div class="card-divider"></div>
-                  <div class="pd-card-action">
-                    <button class="btn btn-md">Buy Now</button>
-                    <button class="btn btn-md outline-primary">
-                      Add To Cart
-                    </button>
-                  </div>
-                </div>
-                <div class="overlay-text">Out of Stock</div>
+                <div class="overlay-text">SOLD OUT</div>
               </div>
             </div>
             <iframe
