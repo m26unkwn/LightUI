@@ -259,9 +259,6 @@ body {
 
 .nav-footer {
   margin: 1rem;
-  display: flex;
-  justify-items: center;
-  justify-content: space-between;
 }
 .nav-footer > a {
   padding: var(--spacing-xs);
