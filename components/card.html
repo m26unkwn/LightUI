@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card | Docs</title>
+    <link rel="stylesheet" href="../styles/button.css" />
+    <link rel="stylesheet" href="../styles/card.css" />
+    <link rel="stylesheet" href="../docs.css" />
+  </head>
+  <body>
+    <main class="main-wrapper flex flex-col">
+      <!-- navbar starts here -->
+      <nav class="nav-wrapper">
+        <div class="container nav-inner-wrapper flex ai-center jc-between">
+          <h1 class="nav-logo">LightUI</h1>
+          <div class="nav-items flex flex-centered">
+            <a href="#" target="" class="nav-link">Docs</a>
+            <a
+              href="https://github.com/m26unkwn/LightUI"
+              target="_blank"
+              class="nav-link"
+              >Github</a
+            >
+          </div>
+        </div>
+      </nav>
+      <!-- navbar end here -->
+
+      <!-- main document starts here -->
+
+      <section class="main-doc container flex ai-start">
+        <!-- sidebar Documentation and components start -->
+
+        <aside class="sidebar flex flex-col ai-start jc-start">
+          <h3 class="nav-heading">Documentation</h3>
+          <span class="divider"></span>
+
+          <div class="nav-section flex flex-col ai-start">
+            <h4 class="nav-section-heading">Components</h4>
+            <ul class="nav-section-items flex flex-col ai-start">
+              <li>
+                <a href="./avatar.html">Avatar</a>
+              </li>
+              <li>
+                <a href="./alert.html">Alert</a>
+              </li>
+              <li>
+                <a href="./button.html">Button</a>
+              </li>
+              <li>
+                <a href="./badge.html">Badge</a>
+              </li>
+              <li>
+                <a class="nav-link-active" href="./card.html">Card</a>
+              </li>
+              <li>
+                <a href="./image.html">Image</a>
+              </li>
+              <li>
+                <a href="./input.html">Input</a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+
+        <!-- sidebar Documentation and components end -->
+
+        <!-- Documentation of component starts -->
+
+        <aside class="doc-wrapper">
+          <header class="doc-heading-wrapper flex flex-col">
+            <h1 class="doc-heading">Card</h1>
+            <p class="doc-desc">
+              Card is a container for text, photos, and actions in the context
+              of a single topic.
+            </p>
+          </header>
+          <section class="doc-preview-wrapper flex flex-col" id="default">
+            <h2 class="doc-preview-heading">Basic Card</h2>
+            <p class="doc-preview-desc">
+              Basic Card is the one that contains a title, a descriptive text.
+            </p>
+            <p class="doc-preview-desc">
+              You can create your basic card using class<span
+                class="highlight-text"
+                >card-container</span
+              >.<br />
+              Inside card container you can use class
+              <span class="highlight-text">card-head </span> for title and
+              <span class="highlight-text">card-content </span> for description.
+            </p>
+            <div class="doc-preview doc-preview-row flex ai-center jc-center">
+              <div class="card-container">
+                <div class="card-head">
+                  <b>Title</b>
+                </div>
+                <div class="card-divider"></div>
+                <div class="card-content">
+                  <p>
+                    This is demo text, You can add whatever you want. You can
+                    add different kind of content here.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=sharp&l=htmlmixed&width=563&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-head%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cb%253ETitle%253C%252Fb%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520text%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A"
+              style="
+                width: 100%;
+                height: 312px;
+                margin-top: var(--spacing-md);
+                border: 2px solid rgb(221, 221, 221);
+                border-radius: 10px;
+                padding: var(--spacing-xl) var(--spacing-md);
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </section>
+          <section class="doc-preview-wrapper flex flex-col" id="default">
+            <h2 class="doc-preview-heading">Action Card</h2>
+            <p class="doc-preview-desc">
+              Action card is similar to basic card but it has some Action to do.
+            </p>
+            <p class="doc-preview-desc">
+              You can create your action card using class<span
+                class="highlight-text"
+                >card-action</span
+              >
+              inside the card-container.
+            </p>
+            <div class="doc-preview doc-preview-row flex ai-center jc-center">
+              <div class="card-container">
+                <div class="card-head">
+                  <b>Title</b>
+                </div>
+                <div class="card-divider"></div>
+                <div class="card-content">
+                  <p>
+                    This is demo text, You can add whatever you want. You can
+                    add different kind of content here.
+                  </p>
+                </div>
+                <div class="card-divider"></div>
+                <div class="card-action">
+                  <button class="btn outline-primary">Dismiss</button>
+                  <button class="btn">Agree</button>
+                </div>
+              </div>
+            </div>
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=sharp&l=htmlmixed&width=730&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%2509%2509%2509%253Cdiv%2520class%253D%2522card-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-head%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cb%253ETitle%253C%252Fb%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520text%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-action%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2522%253EDismiss%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2522%253EAgree%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A"
+              style="
+                width: 100%;
+                height: 300px;
+                margin-top: var(--spacing-md);
+                border: 2px solid rgb(221, 221, 221);
+                border-radius: 10px;
+                padding: var(--spacing-xl) var(--spacing-md);
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </section>
+          <section class="doc-preview-wrapper flex flex-col" id="default">
+            <h2 class="doc-preview-heading">Product Card</h2>
+            <p class="doc-preview-desc">
+              Product card has two variation by default horizontal card and
+              vertical card.
+            </p>
+            <p class="doc-preview-desc">
+              You can create your Product card using class<span
+                class="highlight-text"
+                >pd-card-container</span
+              >
+              for the product container.
+            </p>
+            <p class="doc-preview-desc">
+              Inside container you can use different classes for image, title,
+              description, price, and buttons.
+              <span class="highlight-text">pd-img-wrapper</span>.
+
+              <span class="highlight-text">pd-content</span> inside this content
+              you can use
+              <span class="highlight-text">pd-size</span>
+              <span class="highlight-text">pd-card-action</span> and many more.
+            </p>
+            <div class="doc-preview doc-preview-row flex ai-center jc-center">
+              <div class="pd-card-container">
+                <div class="card-img-wrapper">
+                  <img class="card-img" src="../assets/product_1.jpg" />
+                </div>
+                <div class="pd-content">
+                  <h1 class="pd-heading">Classic Utility Jacket</h1>
+                  <p class="pd-desc">Style, Modern, new-season.</p>
+                  <div class="pd-price">
+                    <p class="crnt-price">$200</p>
+                    <p class="prev-price">$350</p>
+                    <p class="discount">30% off</p>
+                  </div>
+                  <div class="pd-size">
+                    <div class="radio-btn">
+                      <input type="radio" name="size" value="XS" />
+                      <label for="XS">XS</label>
+                    </div>
+                    <div class="radio-btn">
+                      <input type="radio" name="size" value="S" />
+                      <label for="S">S</label>
+                    </div>
+                    <div class="radio-btn">
+                      <input type="radio" name="size" value="M" />
+                      <label for="M">M</label>
+                    </div>
+                    <div class="radio-btn">
+                      <input type="radio" name="size" value="L" />
+                      <label for="L">L</label>
+                    </div>
+                    <div class="radio-btn">
+                      <input type="radio" name="size" value="XL" />
+                      <label for="XL">XL</label>
+                    </div>
+                  </div>
+                  <div class="card-divider"></div>
+                  <div class="pd-card-action">
+                    <button class="btn btn-md">Buy Now</button>
+                    <button class="btn btn-md outline-primary">
+                      Add To Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=sharp&l=htmlmixed&width=730&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%2520%2509%2509%2509%253Cdiv%2520class%253D%2522pd-card-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-img-wrapper%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522card-img%2522%2520src%253D%2522image%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522pd-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%2520class%253D%2522pd-heading%2522%253ETitle%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522pd-desc%2522%253Etext%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522pd-price%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522crnt-price%2522%253E%2524200%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522prev-price%2522%253E%2524350%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522discount%2522%253E30%2525%2520off%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522pd-size%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522radio-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522size%2522%2520value%253D%2522XS%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522XS%2522%253EXS%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522pd-card-action%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2522%253EBuy%2520Now%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Add%2520To%2520Cart%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A"
+              style="
+                width: 100%;
+                height: 300px;
+                margin-top: var(--spacing-md);
+                border: 2px solid rgb(221, 221, 221);
+                border-radius: 10px;
+                padding: var(--spacing-xl) var(--spacing-md);
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </section>
+          <section class="doc-preview-wrapper flex flex-col" id="default">
+            <h2 class="doc-preview-heading">Vertical Product Card</h2>
+            <p class="doc-preview-desc">
+              Product card has two variationd by default horizontal card and
+              vertical card.
+            </p>
+            <p class="doc-preview-desc">
+              You can create your vertical Product card using class<span
+                class="highlight-text"
+                >vertical</span
+              >
+              after the
+              <span class="highlight-text">pd-card-container</span>.<br />
+              To make image vertical you can class
+              <span class="highlight-text">vertical-img</span> for image wrapper
+              and for image
+              <span class="highlight-text">vertical-card-img</span>.
+            </p>
+            <p class="doc-preview-desc">
+              You can also add badge using class
+              <span class="highlight-text">badge</span>
+              .
+            </p>
+            <div class="doc-preview doc-preview-row flex ai-center jc-center">
+              <div class="pd-card-container vertical">
+                <div class="badge">
+                  <svg
+                    id="Iconly_Bold_Heart"
+                    data-name="Iconly/Bold/Heart"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="19"
+                    viewBox="0 0 20 19"
+                  >
+                    <g id="Heart" transform="translate(0 0)">
+                      <path
+                        id="Path"
+                        d="M15.71.29A5.842,5.842,0,0,0,13.85,0,6.263,6.263,0,0,0,10,1.3a3.041,3.041,0,0,0-.3-.189C9.6,1.049,9.42.9,9.27.82L8.89.65A3.526,3.526,0,0,0,8.26.389.349.349,0,0,0,8.17.33H8.111A6.237,6.237,0,0,0,6.28,0H6.17a5.8,5.8,0,0,0-.84.06H5.21a4.519,4.519,0,0,0-.889.209C.59,1.49-.74,5.54.39,9.08a12.933,12.933,0,0,0,3.011,4.8,38.094,38.094,0,0,0,6.369,4.96l.26.161.25-.151a38.456,38.456,0,0,0,6.331-4.96A12.728,12.728,0,0,0,19.62,9.08C20.731,5.54,19.4,1.49,15.71.29Z"
+                        fill="var(--danger-color)"
+                      />
+                    </g>
+                  </svg>
+                </div>
+                <div class="card-img-wrapper vertical-img">
+                  <img
+                    class="card-img vertical-card-img"
+                    src="../assets/product_1.jpg"
+                  />
+                </div>
+                <div class="pd-content">
+                  <h1 class="pd-heading">Classic Utility Jacket</h1>
+                  <p class="pd-desc">Style, Modern, new-season.</p>
+                  <div class="pd-price">
+                    <p class="crnt-price">$200</p>
+                    <p class="prev-price">$350</p>
+                    <p class="discount">30% off</p>
+                  </div>
+                  <div class="pd-size">
+                    <div class="radio-btn">
+                      <input type="radio" name="size" value="XS" />
+                      <label for="XS">XS</label>
+                    </div>
+                    <div class="radio-btn">
+                      <input type="radio" name="size" value="S" />
+                      <label for="S">S</label>
+                    </div>
+                    <div class="radio-btn">
+                      <input type="radio" name="size" value="M" />
+                      <label for="M">M</label>
+                    </div>
+                    <div class="radio-btn">
+                      <input type="radio" name="size" value="L" />
+                      <label for="L">L</label>
+                    </div>
+                    <div class="radio-btn">
+                      <input type="radio" name="size" value="XL" />
+                      <label for="XL">XL</label>
+                    </div>
+                  </div>
+                  <div class="card-divider"></div>
+                  <div class="pd-card-action">
+                    <button class="btn btn-md">Buy Now</button>
+                    <button class="btn btn-md outline-primary">
+                      Add To Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=sharp&l=htmlmixed&width=730&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%2520%2509%2509%2509%253Cdiv%2520class%253D%2522pd-card-container%2520vertical%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-img-wrapper%2520vertical-img%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522card-img%2520vertical-card-img%2522%2520src%253D%2522image%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522pd-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%2520class%253D%2522pd-heading%2522%253ETitle%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522pd-desc%2522%253Etext%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522pd-price%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522crnt-price%2522%253E%2524200%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522prev-price%2522%253E%2524350%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522discount%2522%253E30%2525%2520off%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522pd-size%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522radio-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522size%2522%2520value%253D%2522XS%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522XS%2522%253EXS%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522pd-card-action%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2522%253EBuy%2520Now%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Add%2520To%2520Cart%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A"
+              style="
+                width: 100%;
+                height: 300px;
+                margin-top: var(--spacing-md);
+                border: 2px solid rgb(221, 221, 221);
+                border-radius: 10px;
+                padding: var(--spacing-xl) var(--spacing-md);
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </section>
+          <section class="doc-preview-wrapper flex flex-col" id="default">
+            <h2 class="doc-preview-heading">Overlay Text Product Card</h2>
+            <p class="doc-preview-desc">
+              You can add class
+              <span class="highlight-text">overlay-text</span> to create overlay
+              text over the vertical product card.
+            </p>
+
+            <div class="doc-preview doc-preview-row flex ai-center jc-center">
+              <div class="pd-card-container vertical">
+                <div class="card-overlay">
+                  <div class="card-img-wrapper vertical-img">
+                    <img
+                      class="card-img vertical-card-img"
+                      src="../assets/product_1.jpg"
+                    />
+                  </div>
+                  <div class="pd-content">
+                    <h1 class="pd-heading">Classic Utility Jacket</h1>
+                    <p class="pd-desc">Style, Modern, new-season.</p>
+                    <div class="pd-price">
+                      <p class="crnt-price">$200</p>
+                      <p class="prev-price">$350</p>
+                      <p class="discount">30% off</p>
+                    </div>
+                    <div class="pd-size">
+                      <div class="radio-btn">
+                        <input type="radio" name="size" value="XS" />
+                        <label for="XS">XS</label>
+                      </div>
+                      <div class="radio-btn">
+                        <input type="radio" name="size" value="S" />
+                        <label for="S">S</label>
+                      </div>
+                      <div class="radio-btn">
+                        <input type="radio" name="size" value="M" />
+                        <label for="M">M</label>
+                      </div>
+                      <div class="radio-btn">
+                        <input type="radio" name="size" value="L" />
+                        <label for="L">L</label>
+                      </div>
+                      <div class="radio-btn">
+                        <input type="radio" name="size" value="XL" />
+                        <label for="XL">XL</label>
+                      </div>
+                    </div>
+                    <div class="card-divider"></div>
+                    <div class="pd-card-action">
+                      <button class="btn btn-md">Buy Now</button>
+                      <button class="btn btn-md outline-primary">
+                        Add To Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="overlay-text">SOLD OUT</div>
+              </div>
+            </div>
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=sharp&l=htmlmixed&width=730&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%2520%2509%2509%2509%253Cdiv%2520class%253D%2522pd-card-container%2520vertical%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-img-wrapper%2520vertical-img%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522card-img%2520vertical-card-img%2522%2520src%253D%2522image%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522pd-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%2520class%253D%2522pd-heading%2522%253ETitle%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522pd-desc%2522%253Etext%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522pd-price%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522crnt-price%2522%253E%2524200%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522prev-price%2522%253E%2524350%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522discount%2522%253E30%2525%2520off%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522pd-size%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522radio-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522size%2522%2520value%253D%2522XS%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522XS%2522%253EXS%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522pd-card-action%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2522%253EBuy%2520Now%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Add%2520To%2520Cart%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522overlay-text%2522%253EOut%2520of%2520Stock%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%250A"
+              style="
+                width: 100%;
+                height: 300px;
+                margin-top: var(--spacing-md);
+                border: 2px solid rgb(221, 221, 221);
+                border-radius: 10px;
+                padding: var(--spacing-xl) var(--spacing-md);
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </section>
+        </aside>
+        <!-- Documentation of component end -->
+      </section>
+      <!-- main document ends here -->
+    </main>
+  </body>
+</html>
