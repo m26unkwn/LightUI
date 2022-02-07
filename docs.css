@@ -257,6 +257,29 @@ body {
   border-radius: 6px;
 }
 
+.nav-footer {
+  margin: 1rem;
+  display: flex;
+  justify-items: center;
+  justify-content: space-between;
+}
+.nav-footer > a {
+  padding: var(--spacing-xs);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+.nav-footer > a:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: var(--secondary-color);
+  background: rgb(243, 243, 243);
+  border-radius: 10px;
+}
 /* wrapper for code */
 
 @media (max-width: 1050px) {
