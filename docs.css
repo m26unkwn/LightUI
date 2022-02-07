@@ -199,7 +199,6 @@ body {
     var(--secondary-color) 25%,
     rgb(178, 73, 248) 100%
   );
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -226,7 +225,7 @@ body {
   width: min(300px, 90%);
   font-size: var(--font-size-md);
   background: var(--primary-color);
-  color: #fff;
+  color: var(--color-white);
   border: none;
   outline: none;
   border-radius: 10px;
@@ -242,8 +241,19 @@ body {
 .hero-btn:active {
   transform: scale(0.97);
 }
+.nav-link {
+  padding: var(--spacing-sm);
+}
 
-@media (max-width: 1000px) {
+.nav-link:hover {
+  opacity: 0.8;
+  background: rgb(243, 243, 243);
+  border-radius: 6px;
+}
+
+/* wrapper for code */
+
+@media (max-width: 1050px) {
   .nav-wrapper {
     padding: 0 1rem;
   }
@@ -256,5 +266,4 @@ body {
     top: 0;
     z-index: -1;
   }
-
 }

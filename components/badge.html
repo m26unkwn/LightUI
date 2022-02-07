@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Badges | Docs</title>
+    <link rel="stylesheet" href="../styles/badge.css" />
+    <link rel="stylesheet" href="../styles/avatar.css" />
+    <link rel="stylesheet" href="../styles/button.css" />
+
+    <link rel="stylesheet" href="../docs.css" />
+  </head>
+  <body>
+    <main class="main-wrapper flex flex-col">
+      <!-- navbar starts -->
+      <nav class="nav-wrapper">
+        <div class="container nav-inner-wrapper flex ai-center jc-between">
+          <h1 class="nav-logo">LightUI</h1>
+          <div class="nav-items flex flex-centered">
+            <a href="#!">Docs</a>
+            <a href="#!">Github</a>
+          </div>
+        </div>
+      </nav>
+      <!-- navbar end here -->
+
+      <!-- main document starts here -->
+
+      <section class="main-doc container flex ai-start">
+        <!-- sidebar Documentation and components start -->
+
+        <aside class="sidebar flex flex-col ai-start jc-start">
+          <h3 class="nav-heading">Documentation</h3>
+          <span class="divider"></span>
+
+          <div class="nav-section flex flex-col ai-start">
+            <h4 class="nav-section-heading">Components</h4>
+            <ul
+              class="nav-section-items flex flex-col ai-start flex-wrap flex-gap"
+            >
+              <li>
+                <a href="./avatar.html">Avatar</a>
+              </li>
+              <li>
+                <a href="./alert.html">Alert</a>
+              </li>
+              <li>
+                <a href="./button.html">Button</a>
+              </li>
+              <li>
+                <a class="nav-link-active" href="#">Badge</a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+        <!-- sidebar Documentation and components end here -->
+
+        <!-- Documentation of component starts -->
+        <aside class="doc-wrapper">
+          <header class="doc-heading-wrapper flex flex-col">
+            <h1 class="doc-heading">Badge</h1>
+            <p class="doc-desc">
+              A badge is a visual indicator for numeric values such as tallies
+              and scores or status such as online, offline and dnd.
+            </p>
+          </header>
+          <section class="doc-preview-wrapper flex flex-col" id="default">
+            <h2 class="doc-preview-heading">Avatar Badge</h2>
+            <p class="doc-preview-desc">
+              Avatar Badge is used to show the current status of a user. you can
+              create a badge using class
+              <span class="highlight-text">badge</span> for the container.
+            </p>
+            <ul class="doc-preview-desc">
+              <p>
+                you can give position and color to the badge using the following
+                classes
+              </p>
+              <li>
+                <span class="highlight-text">badge-dot-size</span>
+
+                <span class="highlight-text">badge-pos-top-left</span>
+                <span class="highlight-text">badge-pos-top-right</span>
+                <span class="highlight-text">badge-pos-bottom-left</span>
+                <span class="highlight-text">badge-pos-bottom-right</span>
+              </li>
+              <li>
+                <span class="highlight-text">online</span>
+                <span class="highlight-text">offline</span>
+                <span class="highlight-text">dnd</span>
+              </li>
+            </ul>
+
+            <div
+              class="doc-preview doc-preview-row flex ai-center jc-start flex-wrap flex-gap"
+            >
+              <div class="badge">
+                <span class="avatar">A</span>
+                <div class="badge-dot-size badge-pos-bottom-left offline"></div>
+              </div>
+              <div class="badge">
+                <img class="avatar" src="../assets/Avtar_1.jpg" alt="avatar" />
+                <div class="badge-dot-size badge-pos-bottom-right online"></div>
+              </div>
+              <div class="badge">
+                <span class="avatar">M</span>
+                <div class="badge-dot-size badge-pos-bottom-right dnd"></div>
+              </div>
+              <div class="badge">
+                <img class="avatar" src="../assets/avatar-3.png" alt="avatar" />
+                <div class="badge-dot-size badge-pos-top-left online"></div>
+              </div>
+              <div class="badge">
+                <span class="avatar">A</span>
+                <div class="badge-dot-size badge-pos-top-right dnd"></div>
+              </div>
+            </div>
+
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=sharp&l=htmlmixed&width=615&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%2509%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar%2522%253EA%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2509%253Cdiv%2520class%253D%2522%2520badge-dot-size%2520badge-pos-bottom-right%2520offline%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+              style="
+                width: 100%;
+                height: 200px;
+                margin-top: var(--spacing-md);
+                border: 2px solid rgb(221, 221, 221);
+                border-radius: 10px;
+                padding: var(--spacing-xl) var(--spacing-md);
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </section>
+          <section class="doc-preview-wrapper flex flex-col" id="default">
+            <h2 class="doc-preview-heading">Number Badge</h2>
+            <p class="doc-preview-desc">
+              Number Badge is used to show the no. of items present in the
+              parent component.
+            </p>
+
+            <p class="doc-preview-desc">
+              you can give position and shape to the badge using the following
+              classes
+              <span class="highlight-text">badge-num-size</span>
+              <span class="highlight-text">badge-num-pos</span>.
+            </p>
+            <p class="doc-preview-desc">
+              You can use shapes like:
+              <span class="highlight-text">square</span> and
+              <span class="highlight-text">circle</span>.
+            </p>
+
+            <div
+              class="doc-preview doc-preview-row flex ai-center jc-start flex-wrap gap-2"
+            >
+              <div class="badge">
+                <button class="btn btn-icon icon-primary">
+                  <svg
+                    width="25"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M14.1213 11.2331H16.8891C17.3088 11.2331 17.6386 10.8861 17.6386 10.4677C17.6386 10.0391 17.3088 9.70236 16.8891 9.70236H14.1213C13.7016 9.70236 13.3719 10.0391 13.3719 10.4677C13.3719 10.8861 13.7016 11.2331 14.1213 11.2331ZM20.1766 5.92749C20.7861 5.92749 21.1858 6.1418 21.5855 6.61123C21.9852 7.08067 22.0551 7.7542 21.9652 8.36549L21.0159 15.06C20.8361 16.3469 19.7569 17.2949 18.4879 17.2949H7.58639C6.25742 17.2949 5.15828 16.255 5.04837 14.908L4.12908 3.7834L2.62026 3.51807C2.22057 3.44664 1.94079 3.04864 2.01073 2.64043C2.08068 2.22305 2.47038 1.94649 2.88006 2.00874L5.2632 2.3751C5.60293 2.43735 5.85274 2.72207 5.88272 3.06905L6.07257 5.35499C6.10254 5.68257 6.36234 5.92749 6.68209 5.92749H20.1766ZM7.42631 18.9079C6.58697 18.9079 5.9075 19.6018 5.9075 20.459C5.9075 21.3061 6.58697 22 7.42631 22C8.25567 22 8.93514 21.3061 8.93514 20.459C8.93514 19.6018 8.25567 18.9079 7.42631 18.9079ZM18.6676 18.9079C17.8282 18.9079 17.1487 19.6018 17.1487 20.459C17.1487 21.3061 17.8282 22 18.6676 22C19.4969 22 20.1764 21.3061 20.1764 20.459C20.1764 19.6018 19.4969 18.9079 18.6676 18.9079Z"
+                      fill="#fffff"
+                    />
+                  </svg>
+                </button>
+                <div class="badge-num-size badge-num-pos square">7</div>
+              </div>
+              <div class="badge">
+                <button class="btn btn-icon icon-primary">
+                  <svg
+                    width="25"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M2 12.015C2 6.74712 6.21 2 12.02 2C17.7 2 22 6.65699 22 11.985C22 18.1642 16.96 22 12 22C10.36 22 8.54 21.5593 7.08 20.698C6.57 20.3876 6.14 20.1572 5.59 20.3375L3.57 20.9384C3.06 21.0986 2.6 20.698 2.75 20.1572L3.42 17.9139C3.53 17.6034 3.51 17.2729 3.35 17.0125C2.49 15.4301 2 13.6975 2 12.015ZM10.7 12.015C10.7 12.7261 11.27 13.2969 11.98 13.307C12.69 13.307 13.26 12.7261 13.26 12.025C13.26 11.314 12.69 10.7431 11.98 10.7431C11.28 10.7331 10.7 11.314 10.7 12.015ZM15.31 12.025C15.31 12.7261 15.88 13.307 16.59 13.307C17.3 13.307 17.87 12.7261 17.87 12.025C17.87 11.314 17.3 10.7431 16.59 10.7431C15.88 10.7431 15.31 11.314 15.31 12.025ZM7.37 13.307C6.67 13.307 6.09 12.7261 6.09 12.025C6.09 11.314 6.66 10.7431 7.37 10.7431C8.08 10.7431 8.65 11.314 8.65 12.025C8.65 12.7261 8.08 13.2969 7.37 13.307Z"
+                    ></path>
+                  </svg>
+                </button>
+                <div class="badge-num-size badge-num-pos circle">10</div>
+              </div>
+              <div class="badge">
+                <svg
+                  width="40"
+                  height="39"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="var(--secondary-color)"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M2 12.015C2 6.74712 6.21 2 12.02 2C17.7 2 22 6.65699 22 11.985C22 18.1642 16.96 22 12 22C10.36 22 8.54 21.5593 7.08 20.698C6.57 20.3876 6.14 20.1572 5.59 20.3375L3.57 20.9384C3.06 21.0986 2.6 20.698 2.75 20.1572L3.42 17.9139C3.53 17.6034 3.51 17.2729 3.35 17.0125C2.49 15.4301 2 13.6975 2 12.015ZM10.7 12.015C10.7 12.7261 11.27 13.2969 11.98 13.307C12.69 13.307 13.26 12.7261 13.26 12.025C13.26 11.314 12.69 10.7431 11.98 10.7431C11.28 10.7331 10.7 11.314 10.7 12.015ZM15.31 12.025C15.31 12.7261 15.88 13.307 16.59 13.307C17.3 13.307 17.87 12.7261 17.87 12.025C17.87 11.314 17.3 10.7431 16.59 10.7431C15.88 10.7431 15.31 11.314 15.31 12.025ZM7.37 13.307C6.67 13.307 6.09 12.7261 6.09 12.025C6.09 11.314 6.66 10.7431 7.37 10.7431C8.08 10.7431 8.65 11.314 8.65 12.025C8.65 12.7261 8.08 13.2969 7.37 13.307Z"
+                  ></path>
+                </svg>
+                <div class="badge-num-size badge-num-pos circle">10</div>
+              </div>
+              <div class="badge">
+                <svg
+                  width="40"
+                  height="39"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M14.1213 11.2331H16.8891C17.3088 11.2331 17.6386 10.8861 17.6386 10.4677C17.6386 10.0391 17.3088 9.70236 16.8891 9.70236H14.1213C13.7016 9.70236 13.3719 10.0391 13.3719 10.4677C13.3719 10.8861 13.7016 11.2331 14.1213 11.2331ZM20.1766 5.92749C20.7861 5.92749 21.1858 6.1418 21.5855 6.61123C21.9852 7.08067 22.0551 7.7542 21.9652 8.36549L21.0159 15.06C20.8361 16.3469 19.7569 17.2949 18.4879 17.2949H7.58639C6.25742 17.2949 5.15828 16.255 5.04837 14.908L4.12908 3.7834L2.62026 3.51807C2.22057 3.44664 1.94079 3.04864 2.01073 2.64043C2.08068 2.22305 2.47038 1.94649 2.88006 2.00874L5.2632 2.3751C5.60293 2.43735 5.85274 2.72207 5.88272 3.06905L6.07257 5.35499C6.10254 5.68257 6.36234 5.92749 6.68209 5.92749H20.1766ZM7.42631 18.9079C6.58697 18.9079 5.9075 19.6018 5.9075 20.459C5.9075 21.3061 6.58697 22 7.42631 22C8.25567 22 8.93514 21.3061 8.93514 20.459C8.93514 19.6018 8.25567 18.9079 7.42631 18.9079ZM18.6676 18.9079C17.8282 18.9079 17.1487 19.6018 17.1487 20.459C17.1487 21.3061 17.8282 22 18.6676 22C19.4969 22 20.1764 21.3061 20.1764 20.459C20.1764 19.6018 19.4969 18.9079 18.6676 18.9079Z"
+                    fill="var(--danger-color)"
+                  />
+                </svg>
+
+                <div class="badge-num-size badge-num-pos square">7</div>
+              </div>
+            </div>
+
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=sharp&l=htmlmixed&width=615&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Csvg%253E%253C%252Fsvg%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-num-size%2520badge-num-top-right%2520square%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%25207%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253Eicon%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522bdge-num-size%2520badge-num-top-right%2520circle%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%25208%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+              style="
+                width: 100%;
+                height: 270px;
+                margin-top: var(--spacing-md);
+                border: 2px solid rgb(221, 221, 221);
+                border-radius: 10px;
+                padding: var(--spacing-xl) var(--spacing-md);
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </section>
+        </aside>
+
+        <!-- Documentation of component ends -->
+      </section>
+
+      <!-- main document ends here -->
+    </main>
+  </body>
+</html>
