@@ -1,0 +1,10 @@
+/* You can use this css file for using all the components togther. */
+
+@import "./styles/global.css]";
+@import "./styles/alert.css";
+@import "./styles/avatar.css";
+@import "./styles/badge.css";
+@import "./styles/button.css";
+@import "./styles/card.css";
+@import "./styles/image.css";
+@import "./styles/input.css";

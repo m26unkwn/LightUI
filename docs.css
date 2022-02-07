@@ -32,9 +32,11 @@ body {
   width: 100%;
   padding: var(--spacing-md) 0;
 }
-.nav-logo {
+.nav-logo > a {
   color: var(--primary-color);
+  text-decoration: none;
 }
+
 .nav-items > * + * {
   margin-left: 1rem;
 }
@@ -128,6 +130,7 @@ body {
 }
 .doc-preview-wrapper {
   margin-top: var(--spacing-lg);
+  overflow: hidden;
 }
 
 .doc-preview-wrapper > * + * {
@@ -236,6 +239,9 @@ body {
   );
   -webkit-text-fill-color: #fff;
   transition: 0.1s ease-in;
+}
+.hero-btn > a {
+  text-decoration: none;
 }
 
 .hero-btn:active {
