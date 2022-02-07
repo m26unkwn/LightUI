@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input | Docs</title>
+    <link rel="stylesheet" href="../styles/input.css" />
+    <link rel="stylesheet" href="../docs.css" />
+  </head>
+  <body>
+    <main class="main-wrapper flex flex-col">
+      <!-- navbar starts here -->
+      <nav class="nav-wrapper">
+        <div class="container nav-inner-wrapper flex ai-center jc-between">
+          <h1 class="nav-logo">LightUI</h1>
+          <div class="nav-items flex flex-centered">
+            <a href="#!">Docs</a>
+            <a href="#!">Github</a>
+          </div>
+        </div>
+      </nav>
+      <!-- navbar end here -->
+
+      <!-- main document starts here -->
+
+      <section class="main-doc container flex ai-start">
+        <!-- sidebar Documentation and components start -->
+
+        <aside class="sidebar flex flex-col ai-start jc-start">
+          <h3 class="nav-heading">Documentation</h3>
+          <span class="divider"></span>
+
+          <div class="nav-section flex flex-col ai-start">
+            <h4 class="nav-section-heading">Components</h4>
+            <ul class="nav-section-items flex flex-col ai-start">
+              <li>
+                <a href="./avatar.html">Avatar</a>
+              </li>
+              <li>
+                <a href="./alert.html">Alert</a>
+              </li>
+              <li>
+                <a href="./button.html">Button</a>
+              </li>
+              <li>
+                <a href="./badge.html">Badge</a>
+              </li>
+              <li>
+                <a href="./card.html">Card</a>
+              </li>
+              <li>
+                <a href="./image.html">Image</a>
+              </li>
+              <li>
+                <a class="nav-link-active" href="./input.html">Input</a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+
+        <!-- sidebar Documentation and components start -->
+
+        <!-- Documentation of component starts -->
+
+        <aside class="doc-wrapper">
+          <header class="doc-heading-wrapper flex flex-col">
+            <h1 class="doc-heading">Input</h1>
+            <p class="doc-desc">
+              Inputs are necessary for user interaction with the website. Inputs
+              are used to take information from the user, and then save the data
+              to the server, accordingly.
+            </p>
+          </header>
+          <section class="doc-preview-wrapper flex flex-col" id="default">
+            <h2 class="doc-preview-heading">Label Input</h2>
+            <p class="doc-preview-desc">
+              Label <span class="highlight-text">Input</span> is a simple input
+              with container class
+              <span class="highlight-text"> input-field</span>.
+            </p>
+            <p class="doc-preview-desc">
+              You can show error and success using the following class<span
+                class="highlight-text"
+                >input-error</span
+              >
+              <span class="highlight-text">input-success</span>.
+            </p>
+            <p class="doc-preview-desc">
+              Simlarlly you can use classes for text color
+              <span class="highlight-text">error-color</span>
+              <span class="highlight-text">success-color</span>.
+            </p>
+            <div
+              class="doc-preview doc-preview-row flex flex-col ai-center jc-start flex-wrap flex-gap"
+            >
+              <div class="input-field">
+                <label for="email" value="email"
+                  >Email Address<span class="imp-input">*</span></label
+                >
+                <input placeholder="jhonDoe@example.com" type="email" />
+              </div>
+              <div class="input-field input-error">
+                <label for="password" value="password"
+                  >Password<span class="imp-input">*</span></label
+                >
+                <input placeholder="password" type="password" />
+                <span class="error-color alert-text"
+                  >Wrong Password. Try again.
+                </span>
+              </div>
+            </div>
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=sharp&l=htmlmixed&width=730&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2509%2509%2509%253Cdiv%2520class%253D%2522input-field%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522email%2522%2520value%253D%2522email%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253EEmail%2520Address%253Cspan%2520class%253D%2522imp-input%2522%253E*%253C%252Fspan%253E%253C%252Flabel%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520placeholder%253D%2522jhonDoe%2540example.com%2522%2520type%253D%2522email%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-field%2520input-error%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522password%2522%2520value%253D%2522password%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253EPassword%253Cspan%2520class%253D%2522imp-input%2522%253E*%253C%252Fspan%253E%253C%252Flabel%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520placeholder%253D%2522password%2522%2520type%253D%2522password%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522error-color%2520alert-text%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253EWrong%2520Password.%2520Try%2520again.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A"
+              style="
+                width: 100%;
+                height: 200px;
+                margin-top: var(--spacing-md);
+                border: 2px solid rgb(221, 221, 221);
+                border-radius: 10px;
+                padding: var(--spacing-xl) var(--spacing-md);
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </section>
+          <section class="doc-preview-wrapper flex flex-col" id="default">
+            <h2 class="doc-preview-heading">Textarea Input</h2>
+            <p class="doc-preview-desc">
+              You can create you textarea input just by using
+              <span class="highlight-text">textarea</span> tag inside
+              <span class="highlight-text"> input-field</span>.
+            </p>
+            <div
+              class="doc-preview doc-preview-row flex flex-col ai-center jc-start flex-wrap flex-gap"
+            >
+              <div class="input-field">
+                <label for="text" value="text">Idea</label>
+                <textarea
+                  type="text"
+                  placeholder="Pitch Your Idea"
+                  rows="3"
+                ></textarea>
+              </div>
+            </div>
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=sharp&l=htmlmixed&width=730&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%2509%2509%2509%253Cdiv%2520class%253D%2522input-field%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522text%2522%2520value%253D%2522text%2522%253EIdea%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctextarea%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520type%253D%2522text%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520placeholder%253D%2522Pitch%2520Your%2520Idea%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520rows%253D%25223%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%253C%252Ftextarea%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A"
+              style="
+                width: 100%;
+                height: 200px;
+                margin-top: var(--spacing-md);
+                border: 2px solid rgb(221, 221, 221);
+                border-radius: 10px;
+                padding: var(--spacing-xl) var(--spacing-md);
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </section>
+        </aside>
+        <!-- Documentation of component starts -->
+      </section>
+      <!-- main document ends here -->
+    </main>
+  </body>
+</html>
