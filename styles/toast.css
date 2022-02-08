@@ -1,0 +1,30 @@
+@import "./global.css";
+
+.toast {
+  width: fit-content;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 4px;
+  padding: var(--spacing-sm) var(--spacing-md);
+  color: var(--white-color);
+  align-items: center;
+}
+
+.toast > button {
+  all: unset;
+  cursor: pointer;
+  display: flex;
+  margin-left: var(--spacing-sm);
+}
+
+.toast-success {
+  background-color: var(--success-color);
+}
+
+.toast-failure {
+  background-color: var(--danger-color);
+}
+
+.toast-ongoing {
+  background-color: var(--primary-color);
+}
