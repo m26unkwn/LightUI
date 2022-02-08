@@ -78,8 +78,8 @@
   text-align: center;
   left: 80%;
   top: -10%;
-  border: 2px solid var(--white-color) #ffff;
-  color: var(--white-color) #ffff;
+  border: 2px solid var(--white-color);
+  color: var(--white-color);
   font-size: calc(var(--font-size-xs) + 0.25rem);
   background: var(--dnd-status);
 }
