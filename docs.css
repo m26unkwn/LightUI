@@ -62,7 +62,7 @@ body {
 .divider {
   width: 100%;
   height: 1px;
-  background: rgb(221, 221, 221);
+  background: var(--border-color);
   margin: 0.5rem 0;
 }
 
@@ -237,7 +237,7 @@ body {
     var(--primary-color) 25%,
     var(--secondary-color) 100%
   );
-  -webkit-text-fill-color: #fff;
+  -webkit-text-fill-color: var(--white-color);
   transition: 0.1s ease-in;
 }
 .hero-btn > a {

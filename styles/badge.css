@@ -36,7 +36,7 @@
   left: 0;
   bottom: 0;
   border-radius: 50%;
-  border: 2px solid #ffff;
+  border: 2px solid var(--white-color);
 }
 
 .badge-pos-top-left {
@@ -44,14 +44,14 @@
   left: 0;
   top: 0;
   border-radius: 50%;
-  border: 2px solid #ffff;
+  border: 2px solid var(--white-color);
 }
 .badge-pos-top-right {
   position: absolute;
   right: 0;
   top: 0;
   border-radius: 50%;
-  border: 2px solid #ffff;
+  border: 2px solid var(--white-color);
 }
 
 /* avatar status */
@@ -78,8 +78,8 @@
   text-align: center;
   left: 80%;
   top: -10%;
-  border: 2px solid #ffff;
-  color: #ffff;
+  border: 2px solid var(--white-color) #ffff;
+  color: var(--white-color) #ffff;
   font-size: calc(var(--font-size-xs) + 0.25rem);
   background: var(--dnd-status);
 }

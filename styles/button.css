@@ -18,7 +18,7 @@
   padding: 0.75rem var(--spacing-xl);
   font-size: var(--font-size-sm);
   background: var(--primary-color);
-  color: #ffffff;
+  color: var(--white-color);
   border-radius: 10px;
   cursor: pointer;
   transition: 0.2s ease-in;
@@ -122,7 +122,7 @@
 /* button icon */
 
 .btn-icon {
-  fill: white;
+  fill: var(--white-color);
 }
 .icon-red-color {
   background: var(--danger-color);
@@ -153,12 +153,12 @@
 
 .btn-link {
   text-decoration: none;
-  color: #ffff;
+  color: var(--white-color);
 }
 
 .btn-link:hover {
   text-decoration: underline;
-  color: #ffff;
+  color: var(--white-color);
 }
 
 /* float action button */
