@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"); */
 @import "./styles/global.css";
 
 * {
@@ -111,6 +113,7 @@ body {
 }
 
 .doc-wrapper {
+  width: 80%;
   position: absolute;
   left: 23%;
   top: 0;
@@ -287,7 +290,8 @@ body {
     display: none;
   }
   .doc-wrapper {
-    position: none;
+    width: 90%;
+    position: relative;
     left: 0;
     top: 0;
     z-index: -1;

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input | Docs</title>
+    <link rel="stylesheet" href="../styles/text.css" />
+    <link rel="stylesheet" href="../docs.css" />
+  </head>
+  <body>
+    <main class="main-wrapper flex flex-col">
+      <!-- navbar starts here -->
+      <nav class="nav-wrapper">
+        <div class="container nav-inner-wrapper flex ai-center jc-between">
+          <h1 class="nav-logo"><a href="./Index.html">LightUI</a></h1>
+          <div class="nav-items flex flex-centered">
+            <a href="./getstarted.html" target="" class="nav-link">Docs</a>
+            <a
+              href="https://github.com/m26unkwn/LightUI"
+              target="_blank"
+              class="nav-link"
+              >Github</a
+            >
+          </div>
+        </div>
+      </nav>
+      <!-- navbar end here -->
+
+      <!-- main document starts here -->
+
+      <main class="main-doc container flex ai-start">
+        <!-- sidebar Documentation and components start -->
+
+        <aside class="sidebar flex flex-col ai-start jc-start">
+          <h3 class="nav-heading">Documentation</h3>
+          <div class="nav-section flex flex-col ai-start">
+            <ul class="nav-section-items flex flex-col ai-start">
+              <li>
+                <a href="./getstarted.html">Getting Started</a>
+              </li>
+            </ul>
+          </div>
+          <span class="divider"></span>
+
+          <div class="nav-section flex flex-col ai-start">
+            <h4 class="nav-section-heading">Components</h4>
+            <ul class="nav-section-items flex flex-col ai-start">
+              <li>
+                <a href="./avatar.html">Avatar</a>
+              </li>
+              <li>
+                <a href="./alert.html">Alert</a>
+              </li>
+              <li>
+                <a href="./button.html">Button</a>
+              </li>
+              <li>
+                <a href="./badge.html">Badge</a>
+              </li>
+              <li>
+                <a href="./card.html">Card</a>
+              </li>
+              <li>
+                <a href="./image.html">Image</a>
+              </li>
+              <li>
+                <a href="./input.html">Input</a>
+              </li>
+              <li>
+                <a class="nav-link-active" href="./text.html">Typography</a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+
+        <!-- sidebar Documentation and components start -->
+
+        <!-- Documentation of component starts -->
+
+        <main class="doc-wrapper">
+          <header class="doc-heading-wrapper flex flex-col">
+            <h1 class="doc-heading">Typography</h1>
+            <p class="doc-desc">Check out below text utilities.</p>
+          </header>
+          <main class="doc-preview-wrapper flex flex-col">
+            <h2 class="doc-preview-heading">Heading</h2>
+            <p class="doc-preview-desc">
+              LightUI support all the heading tags.
+            </p>
+
+            <div
+              class="doc-preview doc-preview-row flex-col ai-center jc-center"
+            >
+              <h1>h1. Heading</h1>
+              <h2>h2. Heading</h2>
+              <h3>h3. Heading</h3>
+              <h4>h4. Heading</h4>
+              <h5>h5. Heading</h5>
+              <h6>h6. Heading</h6>
+            </div>
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=sharp&l=htmlmixed&width=732&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%253Eh1.%2520Heading%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%253Eh2.%2520Heading%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%253Eh3.%2520Heading%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%253Eh4.%2520Heading%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%253Eh5.%2520Heading%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch6%253Eh6.%2520Heading%253C%252Fh6%253E%250A%250A"
+              style="
+                width: 100%;
+                height: 200px;
+                margin-top: var(--spacing-md);
+                border: 2px solid rgb(221, 221, 221);
+                border-radius: 10px;
+                padding: var(--spacing-xl) var(--spacing-md);
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </main>
+          <main class="doc-preview-wrapper flex flex-col">
+            <h2 class="doc-preview-heading">Text Align</h2>
+            <p class="doc-preview-desc">
+              LightUI support all the heading tags.
+            </p>
+
+            <div
+              class="doc-preview doc-preview-row flex-col ai-center jc-center"
+            >
+              <h3 class="text-left">Text Left</h3>
+              <h3 class="text-center">Text Center</h3>
+              <h3 class="text-right">Text Right</h3>
+            </div>
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=sharp&l=htmlmixed&width=732&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522text-left%2522%253EText%2520Left%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2509%2509%253Ch3%2520class%253D%2522text-center%2522%253EText%2520Center%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2509%2509%253Ch3%2520class%253D%2522text-right%2522%253EText%2520Right%253C%252Fh3%253E%250A%250A"
+              style="
+                width: 100%;
+                height: 200px;
+                margin-top: var(--spacing-md);
+                border: 2px solid rgb(221, 221, 221);
+                border-radius: 10px;
+                padding: var(--spacing-xl) var(--spacing-md);
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </main>
+          <footer class="nav-footer flex jc-between">
+            <a href="./image.html">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.5 19l-7-7  7-7 "
+                  stroke="var(--secondary-color)"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              Image
+            </a>
+            <a href="./toast.html"
+              >Toast
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.5 5l7 7-7 7"
+                  stroke="var(--secondary-color)"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </a>
+          </footer>
+        </main>
+        <!-- Documentation of component starts -->
+      </main>
+      <!-- main document ends here -->
+    </main>
+  </body>
+</html>
