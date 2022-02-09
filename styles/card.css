@@ -135,9 +135,6 @@
 .pd-size > * + * {
   margin-left: var(--spacing-sm);
 }
-.radio-btn {
-  position: relative;
-}
 
 .radio-btn input[type="radio"] {
   opacity: 0;
