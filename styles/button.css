@@ -19,7 +19,7 @@
   font-size: var(--font-size-sm);
   background: var(--primary-color);
   color: var(--white-color);
-  border-radius: 10px;
+  border-radius: 5px;
   cursor: pointer;
   transition: 0.2s ease-in;
 }
@@ -122,21 +122,22 @@
 /* button icon */
 
 .btn-icon {
-  fill: var(--white-color);
+  background: transparent;
+  padding: 0;
 }
 .icon-red-color {
-  background: var(--danger-color);
+  fill: var(--danger-color);
 }
 
 .icon-primary-color {
-  background: var(--primary-color);
+  fill: var(--primary-color);
 }
 .icon-secondary-color {
-  background: var(--secondary-color);
+  fill: var(--secondary-color);
 }
 
 .icon-warning-color {
-  background: var(--warning-color);
+  fill: var(--warning-color);
 }
 
 .icon-success-color {

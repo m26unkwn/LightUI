@@ -290,8 +290,8 @@ body {
     display: none;
   }
   .doc-wrapper {
-    width: 90%;
-    position: relative;
+    width: auto;
+    position: absolute;
     left: 0;
     top: 0;
     z-index: -1;
