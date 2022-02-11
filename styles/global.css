@@ -11,9 +11,12 @@
   --success-color: #17c964;
   --info-color: #03a9f4;
   --white-color: #ffff;
+  --black-color: black;
   --border-color: rgb(221, 221, 221);
   --color-heading: rgb(75, 75, 75);
   --color-desc: rgb(87, 87, 87);
+  --bg-color-link-hover: rgb(243, 243, 243);
+  --bg-color-link-active: #eff8ff;
 
   /*spacing */
 

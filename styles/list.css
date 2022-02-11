@@ -13,21 +13,20 @@
 
 .list li:hover {
   opacity: 0.8;
-  background: rgb(243, 243, 243);
+  background: var(--bg-color-link-hover);
   border-radius: 6px;
   cursor: pointer;
   color: var(--primary-color);
 }
 
 .sub-list > ul {
-  padding: 0.7rem 1.1rem 0;
+  padding: var(--spacing-sm) var(--spacing-md) 0;
 }
-
-.list .sub-list:hover {
-  color: black;
+s .list .sub-list:hover {
+  color: var(--black-color);
   background: transparent;
 }
 
 .sub-list > ul > li:hover {
-  background: rgb(243, 243, 243);
+  background: var(--bg-color-link-hover);
 }

@@ -101,14 +101,14 @@ body {
 
 .nav-section ul li a:hover {
   opacity: 0.8;
-  background: rgb(243, 243, 243);
+  background: var(--bg-color-link-hover);
   border-radius: 6px;
 }
 
 .nav-link-active {
   color: var(--primary-color) !important;
   font-weight: 600;
-  background: #eff8ff;
+  background: var(--bg-color-link-active);
   border-radius: 6px;
 }
 
