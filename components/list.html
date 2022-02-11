@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>list | Docs</title>
+    <link rel="stylesheet" href="../styles/card.css" />
+    <link rel="stylesheet" href="../styles/list.css" />
+
+    <link rel="stylesheet" href="../docs.css" />
+  </head>
+  <body>
+    <main class="main-wrapper flex flex-col">
+      <!-- navbar starts here -->
+      <nav class="nav-wrapper">
+        <div class="container nav-inner-wrapper flex ai-center jc-between">
+          <h1 class="nav-logo"><a href="./Index.html">LightUI</a></h1>
+          <div class="nav-items flex flex-centered">
+            <a href="./getstarted.html" target="" class="nav-link">Docs</a>
+            <a
+              href="https://github.com/m26unkwn/LightUI"
+              target="_blank"
+              class="nav-link"
+              >Github</a
+            >
+          </div>
+        </div>
+      </nav>
+      <!-- navbar end here -->
+
+      <!-- main document starts here -->
+
+      <section class="main-doc container flex ai-start">
+        <!-- sidebar Documentation and components start -->
+
+        <aside class="sidebar flex flex-col ai-start jc-start">
+          <h3 class="nav-heading">Documentation</h3>
+          <div class="nav-section flex flex-col ai-start">
+            <ul class="nav-section-items flex flex-col ai-start">
+              <li>
+                <a href="./getstarted.html">Getting Started</a>
+              </li>
+            </ul>
+          </div>
+          <span class="divider"></span>
+
+          <div class="nav-section flex flex-col ai-start">
+            <h4 class="nav-section-heading">Components</h4>
+            <ul class="nav-section-items flex flex-col ai-start">
+              <li>
+                <a href="./avatar.html">Avatar</a>
+              </li>
+              <li>
+                <a href="./alert.html">Alert</a>
+              </li>
+              <li>
+                <a href="./button.html">Button</a>
+              </li>
+              <li>
+                <a href="./badge.html">Badge</a>
+              </li>
+              <li>
+                <a href="./card.html">Card</a>
+              </li>
+              <li>
+                <a href="./image.html">Image</a>
+              </li>
+              <li>
+                <a href="./input.html">Input</a>
+              </li>
+              <li>
+                <a href="./toast.html">Toast</a>
+              </li>
+              <li>
+                <a href="./text.html">Typography</a>
+              </li>
+              <li>
+                <a class="nav-link-active" href="./list.html">List</a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+
+        <!-- sidebar Documentation and components end -->
+
+        <!-- Documentation of component starts -->
+
+        <aside class="doc-wrapper">
+          <header class="doc-heading-wrapper flex flex-col">
+            <h1 class="doc-heading">List</h1>
+            <p class="doc-desc">
+              As named suggest list is group of elements. These elements can be
+              used as cards , images or actions.
+            </p>
+          </header>
+          <section class="doc-preview-wrapper flex flex-col">
+            <h2 class="doc-preview-heading">Simple List</h2>
+            <p class="doc-preview-desc">
+              Simple list is group of list having a title and items.
+            </p>
+            <p class="doc-preview-desc">
+              You can create your list using class<span class="highlight-text"
+                >list</span
+              >
+              inside the any container.
+            </p>
+            <div
+              class="modal doc-preview doc-preview-row flex ai-center jc-center"
+            >
+              <div class="card-container">
+                <div class="card-content">
+                  <ul class="list">
+                    <div>
+                      <h1>Title</h1>
+                    </div>
+                    <div class="card-divider"></div>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=sharp&l=htmlmixed&width=732&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%2509%2509%2509%2509%253Cul%2520class%253D%2522list%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%253ETitle%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EItem%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EItem%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EItem%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EItem%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A"
+              style="
+                width: 100%;
+                height: 200px;
+                margin-top: var(--spacing-md);
+                border: 2px solid rgb(221, 221, 221);
+                border-radius: 10px;
+                padding: var(--spacing-xl) var(--spacing-md);
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </section>
+          <section class="doc-preview-wrapper flex flex-col">
+            <h2 class="doc-preview-heading">Nested List</h2>
+            <p class="doc-preview-desc">
+              Nested List is group list having some sub list.
+            </p>
+            <p class="doc-preview-desc">
+              You can create your Nested list using class<span
+                class="highlight-text"
+                >list</span
+              >
+              for the parent list and class
+              <span class="highlight-text">sub-list</span>
+              for the sub-list.
+            </p>
+            <div
+              class="modal doc-preview doc-preview-row flex ai-center jc-center"
+            >
+              <div class="card-container">
+                <div class="card-content">
+                  <ul class="list">
+                    <div>
+                      <h1>Title</h1>
+                    </div>
+                    <div class="card-divider"></div>
+                    <li>Item</li>
+                    <li class="sub-list">
+                      <div>Item</div>
+                      <ul>
+                        <li>Sub-Item</li>
+                        <li>Sub-Item</li>
+                        <li>Sub-Item</li>
+                      </ul>
+                    </li>
+                    <li>Item</li>
+                    <li>Item</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=sharp&l=htmlmixed&width=732&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%2509%2509%2509%2509%253Cul%2520class%253D%2522list%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%253ETitle%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-divider%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EItem%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522sub-list%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253EItem%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cul%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253ESub-Item%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253ESub-Item%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253ESub-Item%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EItem%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EItem%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ful%253E"
+              style="
+                width: 100%;
+                height: 200px;
+                margin-top: var(--spacing-md);
+                border: 2px solid rgb(221, 221, 221);
+                border-radius: 10px;
+                padding: var(--spacing-xl) var(--spacing-md);
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </section>
+          <section class="doc-preview-wrapper flex flex-col">
+            <h2 class="doc-preview-heading">Slect List</h2>
+            <p class="doc-preview-desc">
+              Select list is basiclly having some checkbox or radio button.
+            </p>
+            <p class="doc-preview-desc">
+              you create the select list using same class<span
+                class="highlight-text"
+                >list</span
+              >
+              inside the list you can put your checkbox or radio button.
+            </p>
+            <div
+              class="modal doc-preview doc-preview-row flex ai-center jc-center"
+            >
+              <div class="card-container">
+                <div class="card-content">
+                  <ul class="list">
+                    <div>
+                      <b>Title</b>
+                    </div>
+                    <div class="card-divider"></div>
+                    <li>
+                      <input type="checkbox" />
+                      <label> ITEM </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="checkbox" />
+                        ITEM
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="checkbox" />
+                        ITEM
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=sharp&l=htmlmixed&width=732&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%2509%2509%2509%2509%253Cul%2520class%253D%2522list%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cb%253ETitle%253C%252Fb%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-divider%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522checkbox%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%253E%2520ITEM%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%250A%2509%2509%2509%2509%253C%252Ful%253E"
+              style="
+                width: 100%;
+                height: 200px;
+                margin-top: var(--spacing-md);
+                border: 2px solid rgb(221, 221, 221);
+                border-radius: 10px;
+                padding: var(--spacing-xl) var(--spacing-md);
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </section>
+          <footer class="nav-footer flex jc-between">
+            <a href="./text.html">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.5 19l-7-7  7-7 "
+                  stroke="var(--secondary-color)"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              Typography
+            </a>
+          </footer>
+        </aside>
+        <!-- Documentation of component end -->
+      </section>
+      <!-- main document ends here -->
+    </main>
+  </body>
+</html>
