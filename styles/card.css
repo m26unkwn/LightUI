@@ -21,7 +21,7 @@
   padding: var(--spacing-md);
   font-size: var(--font-size-sm);
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 .card-content {
   padding: var(--spacing-md);
