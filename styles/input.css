@@ -22,9 +22,10 @@
 .input-field > input {
   all: unset;
   color: var(--input-color);
+  border-radius: 4px;
 
   padding: var(--spacing-sm);
-  border-radius: 10px;
+
   border: 2px solid var(--border-color);
 }
 
@@ -53,8 +54,8 @@
 .input-field > textarea {
   all: unset;
   padding: var(--spacing-sm);
-  border-radius: 10px;
   border: 2px solid var(--border-color);
+  border-radius: 4px;
 }
 
 .input-field > textarea:focus {
