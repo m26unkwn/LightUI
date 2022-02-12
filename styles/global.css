@@ -16,8 +16,8 @@
   --border-color: rgb(221, 221, 221);
   --color-heading: rgb(75, 75, 75);
   --color-desc: rgb(87, 87, 87);
-  --bg-color-link-hover: rgb(243, 243, 243);
-  --bg-color-link-active: #eff8ff;
+  --bg-color-link-hover: rgb(235, 235, 235);
+  --bg-color-link-active: rgb(233, 245, 255);
 
   /*spacing */
 
