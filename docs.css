@@ -147,6 +147,10 @@ body {
   border-radius: 10px;
   padding: var(--spacing-xl) var(--spacing-md);
 }
+.code {
+  width: 100%;
+  height: 100%;
+}
 .doc-preview-heading {
   font-size: 1.3rem;
   font-weight: 500;
@@ -206,6 +210,7 @@ body {
     var(--secondary-color) 25%,
     rgb(178, 73, 248) 100%
   );
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -232,7 +237,6 @@ body {
   width: min(300px, 90%);
   font-size: var(--font-size-md);
   background: var(--primary-color);
-  color: var(--color-white);
   border: none;
   outline: none;
   border-radius: 10px;
@@ -241,11 +245,11 @@ body {
     var(--primary-color) 25%,
     var(--secondary-color) 100%
   );
-  -webkit-text-fill-color: var(--white-color);
   transition: 0.1s ease-in;
 }
 .hero-btn > a {
   text-decoration: none;
+  color: var(--white-color);
 }
 
 .hero-btn:active {
