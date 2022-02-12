@@ -233,7 +233,7 @@ body {
 }
 .hero-btn {
   margin-top: var(--spacing-md);
-  padding: 0.5em;
+
   width: min(300px, 90%);
   font-size: var(--font-size-md);
   background: var(--primary-color);
@@ -248,8 +248,10 @@ body {
   transition: 0.1s ease-in;
 }
 .hero-btn > a {
+  display: block;
   text-decoration: none;
   color: var(--white-color);
+  padding: 0.5em;
 }
 
 .hero-btn:active {
