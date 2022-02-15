@@ -203,9 +203,6 @@
   position: absolute;
   top: 2%;
   right: 4%;
-  width: 3rem;
-  height: 3rem;
-  background: var(--radio-btn-background);
   border-radius: 50%;
 }
 .icon-center {
