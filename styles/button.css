@@ -131,6 +131,9 @@
   background: var(--bg-color-link-hover);
   border-radius: 50%;
 }
+.btn-icon:active {
+  transform: none;
+}
 
 .icon-red-color {
   fill: var(--danger-color);
