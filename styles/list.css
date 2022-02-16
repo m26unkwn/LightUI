@@ -22,9 +22,9 @@
 .sub-list > ul {
   padding: var(--spacing-sm) var(--spacing-md) 0;
 }
-s .list .sub-list:hover {
+.list .sub-list:hover {
   color: var(--black-color);
-  background: transparent;
+  background: white;
 }
 
 .sub-list > ul > li:hover {
