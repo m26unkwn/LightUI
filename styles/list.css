@@ -9,8 +9,6 @@
 
 .list li {
   padding: var(--spacing-sm) 8px;
-  display: flex;
-  align-items: center;
 }
 
 .list li:hover {
