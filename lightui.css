@@ -3,7 +3,7 @@
 
 
 
-@import "./styles/global.css]";
+@import "./styles/global.css";
 @import "./styles/alert.css";
 @import "./styles/avatar.css";
 @import "./styles/badge.css";
@@ -11,3 +11,6 @@
 @import "./styles/card.css";
 @import "./styles/image.css";
 @import "./styles/input.css";
+@import "./styles/toast.css";
+@import "./styles/text.css";
+@import "./styles/list.css";
