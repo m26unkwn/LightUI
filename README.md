@@ -1,5 +1,5 @@
 # Light UI
-A CSS component Liberary. You can build beuatiful UI in your website by just using this Liberary.
+A CSS component Library. You can build beuatiful UI in your website by just using this Library.
 It is easy to use and begineer friendly. If you are new to CSS than its your pickachu!.
 
 ![App Screenshot](./assets/home.jpeg)
