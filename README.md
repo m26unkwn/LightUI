@@ -1,9 +1,9 @@
 # Light UI
+
 A CSS component Liberary. You can build beuatiful UI in your website by just using this Liberary.
 It is easy to use and begineer friendly. If you are new to CSS than its your pickachu!.
 
 ![App Screenshot](./assets/home.jpeg)
-
 
 ## TLDR
 
@@ -14,8 +14,6 @@ Then I have something for you.
 
 ***DEMO LINK*** ⇒
 <https://lightt-ui.netlify.app/>
-
-
 
 ### Documentation
 
