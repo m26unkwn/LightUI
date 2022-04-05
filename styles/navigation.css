@@ -1,4 +1,21 @@
-.navbar-wrapper{
-    padding: var(--spacing-lg);
-    background: var(--white-color);
+.navbar-wrapper {
+  padding: var(--spacing-lg);
+  background: var(--white-color);
+  display: flex;
+  justify-content: space-between;
+  gap: var(--spacing-md);
 }
+
+.navbar-action-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.nav-cta-btn {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--spacing-md);
+}
+
