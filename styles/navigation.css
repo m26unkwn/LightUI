@@ -1,0 +1,4 @@
+.navbar-wrapper{
+    padding: var(--spacing-lg);
+    background: var(--white-color);
+}

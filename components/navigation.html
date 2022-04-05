@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation | Docs</title>
+    <link rel="stylesheet" href="../docs.css" />
+    <link rel="stylesheet" href="../styles/button.css" />
+    <link rel="stylesheet" href="../styles/input.css" />
+  </head>
+  <body>
+    <main class="main-wrapper flex flex-col">
+      <!-- navbar starts here -->
+      <nav class="nav-wrapper">
+        <div class="container nav-inner-wrapper flex ai-center jc-between">
+          <h1 class="nav-logo"><a href="../Index.html">LightUI</a></h1>
+          <div class="nav-items flex flex-centered">
+            <a href="./getstarted.html" target="" class="nav-link">Docs</a>
+            <a
+              href="https://github.com/m26unkwn/LightUI"
+              target="_blank"
+              class="nav-link"
+              >Github</a
+            >
+          </div>
+        </div>
+      </nav>
+      <!-- navbar end here -->
+
+      <!-- main document starts here -->
+
+      <section class="main-doc container flex ai-start">
+        <!-- sidebar Documentation and components start -->
+
+        <aside class="sidebar flex flex-col ai-start jc-start">
+          <h3 class="nav-heading">Documentation</h3>
+          <div class="nav-section flex flex-col ai-start">
+            <ul class="nav-section-items flex flex-col ai-start">
+              <li>
+                <a href="./getstarted.html">Getting Started</a>
+              </li>
+            </ul>
+          </div>
+          <span class="divider"></span>
+
+          <div class="nav-section flex flex-col ai-start">
+            <h4 class="nav-section-heading">Components</h4>
+            <ul class="nav-section-items flex flex-col ai-start">
+              <li>
+                <a href="./avatar.html">Avatar</a>
+              </li>
+              <li>
+                <a href="./alert.html">Alert</a>
+              </li>
+              <li>
+                <a href="./button.html">Button</a>
+              </li>
+              <li>
+                <a href="./badge.html">Badge</a>
+              </li>
+              <li>
+                <a href="./card.html">Card</a>
+              </li>
+              <li>
+                <a href="./card.html">Image</a>
+              </li>
+              <li>
+                <a href="./input.html">Input</a>
+              </li>
+              <li>
+                <a href="./text.html">Typography</a>
+              </li>
+              <li>
+                <a href="./toast.html">Toast</a>
+              </li>
+              <li>
+                <a href="./list.html">List</a>
+              </li>
+              <li>
+                <a class="nav-link-active" href="./navigation.html"
+                  >Navigation</a
+                >
+              </li>
+            </ul>
+          </div>
+        </aside>
+
+        <!-- sidebar Documentation and components end -->
+
+        <!-- Documentation of component starts -->
+
+        <aside class="doc-wrapper">
+          <header class="doc-heading-wrapper flex flex-col">
+            <h1 class="doc-heading">Navigation</h1>
+            <p class="doc-desc">
+              allows movement between primary destinations in an app.
+            </p>
+          </header>
+          <section class="doc-preview-wrapper flex flex-col">
+            <h2 class="doc-preview-heading">Simple Navigation Bar (Desktop)</h2>
+            <p class="doc-preview-desc">
+              appears at the top of an app screen and enables navigation to
+              different screens:
+            </p>
+            <p class="doc-preview-desc">
+              You can create your Navigation with using class
+              <span class="highlight-text">nav-wrapper</span>.
+            </p>
+            <div class="doc-preview doc-preview-row flex jc-center flex-gap">
+              <nav class="navbar-wrapper flex jc-between flex-gap">
+                <div class="logo flex jc-between ai-center flex-gap">
+                  <a href="../index.html"
+                    ><button class="btn btn-icon">
+                      <svg
+                        width="50"
+                        height="50"
+                        viewBox="0 0 150 151"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="75" cy="75" r="75" fill="#0070F3" />
+                        <line
+                          x1="77.5"
+                          y1="0.00999978"
+                          x2="76.5"
+                          y2="150.01"
+                          stroke="#FF99DC"
+                          stroke-width="10"
+                        />
+                        <path
+                          d="M39.5938 99H30.0938L30.1562 94.0938H39.5938C42.8438 94.0938 45.5521 93.4167 47.7188 92.0625C49.8854 90.6875 51.5104 88.7708 52.5938 86.3125C53.6979 83.8333 54.25 80.9375 54.25 77.625V74.8438C54.25 72.2396 53.9375 69.9271 53.3125 67.9062C52.6875 65.8646 51.7708 64.1458 50.5625 62.75C49.3542 61.3333 47.875 60.2604 46.125 59.5312C44.3958 58.8021 42.4062 58.4375 40.1562 58.4375H29.9062V53.5H40.1562C43.1354 53.5 45.8542 54 48.3125 55C50.7708 55.9792 52.8854 57.4062 54.6562 59.2812C56.4479 61.1354 57.8229 63.3854 58.7812 66.0312C59.7396 68.6562 60.2188 71.6146 60.2188 74.9062V77.625C60.2188 80.9167 59.7396 83.8854 58.7812 86.5312C57.8229 89.1562 56.4375 91.3958 54.625 93.25C52.8333 95.1042 50.6667 96.5312 48.125 97.5312C45.6042 98.5104 42.7604 99 39.5938 99ZM33.3125 53.5V99H27.2812V53.5H33.3125Z"
+                          fill="white"
+                        />
+                        <path
+                          d="M116.531 87.5C116.531 86.4375 116.365 85.5 116.031 84.6875C115.719 83.8542 115.156 83.1042 114.344 82.4375C113.552 81.7708 112.448 81.1354 111.031 80.5312C109.635 79.9271 107.865 79.3125 105.719 78.6875C103.469 78.0208 101.438 77.2812 99.625 76.4688C97.8125 75.6354 96.2604 74.6875 94.9688 73.625C93.6771 72.5625 92.6875 71.3438 92 69.9688C91.3125 68.5938 90.9688 67.0208 90.9688 65.25C90.9688 63.4792 91.3333 61.8438 92.0625 60.3438C92.7917 58.8438 93.8333 57.5417 95.1875 56.4375C96.5625 55.3125 98.1979 54.4375 100.094 53.8125C101.99 53.1875 104.104 52.875 106.438 52.875C109.854 52.875 112.75 53.5312 115.125 54.8438C117.521 56.1354 119.344 57.8333 120.594 59.9375C121.844 62.0208 122.469 64.25 122.469 66.625H116.469C116.469 64.9167 116.104 63.4062 115.375 62.0938C114.646 60.7604 113.542 59.7188 112.062 58.9688C110.583 58.1979 108.708 57.8125 106.438 57.8125C104.292 57.8125 102.521 58.1354 101.125 58.7812C99.7292 59.4271 98.6875 60.3021 98 61.4062C97.3333 62.5104 97 63.7708 97 65.1875C97 66.1458 97.1979 67.0208 97.5938 67.8125C98.0104 68.5833 98.6458 69.3021 99.5 69.9688C100.375 70.6354 101.479 71.25 102.812 71.8125C104.167 72.375 105.781 72.9167 107.656 73.4375C110.24 74.1667 112.469 74.9792 114.344 75.875C116.219 76.7708 117.76 77.7812 118.969 78.9062C120.198 80.0104 121.104 81.2708 121.688 82.6875C122.292 84.0833 122.594 85.6667 122.594 87.4375C122.594 89.2917 122.219 90.9688 121.469 92.4688C120.719 93.9688 119.646 95.25 118.25 96.3125C116.854 97.375 115.177 98.1979 113.219 98.7812C111.281 99.3438 109.115 99.625 106.719 99.625C104.615 99.625 102.542 99.3333 100.5 98.75C98.4792 98.1667 96.6354 97.2917 94.9688 96.125C93.3229 94.9583 92 93.5208 91 91.8125C90.0208 90.0833 89.5312 88.0833 89.5312 85.8125H95.5312C95.5312 87.375 95.8333 88.7188 96.4375 89.8438C97.0417 90.9479 97.8646 91.8646 98.9062 92.5938C99.9688 93.3229 101.167 93.8646 102.5 94.2188C103.854 94.5521 105.26 94.7188 106.719 94.7188C108.823 94.7188 110.604 94.4271 112.062 93.8438C113.521 93.2604 114.625 92.4271 115.375 91.3438C116.146 90.2604 116.531 88.9792 116.531 87.5Z"
+                          fill="white"
+                        />
+                      </svg></button
+                  ></a>
+                  <h1>DEVSTORE</h1>
+                </div>
+
+                <div class="input-field search-bar">
+                  <input placeholder="Search dev swags" type="search" />
+                </div>
+                <div
+                  class="nav-action-wrapper flex jc-between ai-center flex-gap"
+                >
+                  <div class="nav-btn flex jc-between flex-gap">
+                    <a href="#">
+                      <button class="btn btn-icon">
+                        <svg
+                          width="25"
+                          height="25"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M17.294 7.29105C17.294 10.2281 14.9391 12.5831 12 12.5831C9.0619 12.5831 6.70601 10.2281 6.70601 7.29105C6.70601 4.35402 9.0619 2 12 2C14.9391 2 17.294 4.35402 17.294 7.29105ZM12 22C7.66237 22 4 21.295 4 18.575C4 15.8539 7.68538 15.1739 12 15.1739C16.3386 15.1739 20 15.8789 20 18.599C20 21.32 16.3146 22 12 22Z"
+                            fill="#200E32"
+                          />
+                        </svg>
+                      </button>
+                    </a>
+
+                    <a href="./wishlist.html">
+                      <button class="btn btn-icon icon-primary-color">
+                        <svg
+                          width="25"
+                          height="25"
+                          viewBox="0 0 50 50"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g clip-path="url(#clip0_8_43)">
+                            <path
+                              d="M24.4139 47.7068C19.1313 44.3041 14.1987 40.2803 9.70239 35.7059C6.57814 32.4627 4.18069 28.4628 2.69947 24.0223C0.0695971 15.4484 3.14048 5.64853 11.7334 2.74876C13.9592 1.99397 16.3124 1.81189 18.612 2.21653C20.9117 2.62117 23.0966 3.60175 24.9988 5.08291V5.08291C26.9 3.60461 29.0827 2.62529 31.3799 2.21984C33.677 1.8144 36.0279 1.99356 38.2526 2.74364C46.8409 5.64341 49.9396 15.4458 47.3051 24.0069C45.8255 28.4521 43.4279 32.4565 40.3022 35.7033C35.8051 40.2779 30.8717 44.3017 25.5884 47.7042L25.0104 48.0805L24.4139 47.7068Z"
+                              stroke="#333333"
+                              stroke-width="3"
+                              stroke-miterlimit="10"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_8_43">
+                              <rect width="50" height="50" fill="white" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </button>
+                    </a>
+
+                    <a href="./mycart.html">
+                      <button class="btn btn-icon icon-primary-color">
+                        <svg
+                          width="30"
+                          height="30"
+                          viewBox="0 0 58 56"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            opacity="0.4"
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M17.9372 46.2474C18.957 46.2474 19.7859 47.0477 19.7859 48.0324C19.7859 49.017 18.957 49.815 17.9372 49.815C16.9173 49.815 16.0908 49.017 16.0908 48.0324C16.0908 47.0477 16.9173 46.2474 17.9372 46.2474Z"
+                            fill="black"
+                            stroke="black"
+                            stroke-width="3"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            opacity="0.4"
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M45.1305 46.2474C46.1503 46.2474 46.9792 47.0477 46.9792 48.0324C46.9792 49.017 46.1503 49.815 45.1305 49.815C44.1107 49.815 43.2817 49.017 43.2817 48.0324C43.2817 47.0477 44.1107 46.2474 45.1305 46.2474Z"
+                            stroke="#200E32"
+                            stroke-width="3"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M6.64551 7.58331L11.6722 8.42331L13.9994 35.1936C14.1879 37.3753 16.0753 39.0506 18.3422 39.0506H44.7129C46.8782 39.0506 48.7149 37.5153 49.0266 35.4433L51.3201 20.1413C51.6028 18.2536 50.0876 16.5643 48.1131 16.5643H12.4793"
+                            stroke="#200E32"
+                            stroke-width="3"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            opacity="0.4"
+                            d="M34.1365 25.1884H40.8379"
+                            stroke="#200E32"
+                            stroke-width="3"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </nav>
+            </div>
+            <code class="doc-preview code">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=jsx&width=833&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%2509%253Cnav%2520class%253D%2522navbar-wrapper%2520flex%2520jc-between%2520flex-gap%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522logo%2520flex%2520jc-between%2520ai-center%2520flex-gap%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%253E%253Cbutton%253E%2520Logo%2520%253C%252Fbutton%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%253ETitle%2520%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-field%2520search-bar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520placeholder%253D%2522Search%2520dev%2520swags%2522%2520type%253D%2522search%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522nav-action-wrapper%2520flex%2520jc-between%2520ai-center%2520flex-gap%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522nav-btn%2520flex%2520jc-between%2520flex-gap%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Your%2520Icons%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-icon%2520icon-primary-color%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Your%2520Second%2520Icon%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-icon%2520icon-primary-color%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Your%2520Icon%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fnav%253E%250A%250A"
+                style="
+                  width: 100%;
+                  height: 200px;
+                  border: none;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </section>
+          <footer class="nav-footer flex jc-between">
+            <a href="./text.html">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.5 19l-7-7  7-7 "
+                  stroke="var(--secondary-color)"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              Typography
+            </a>
+            <a href="./list.html"
+              >List
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.5 5l7 7-7 7"
+                  stroke="var(--secondary-color)"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </a>
+          </footer>
+        </aside>
+        <!-- Documentation of component end -->
+      </section>
+      <!-- main document ends here -->
+    </main>
+  </body>
+</html>
