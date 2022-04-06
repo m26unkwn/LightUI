@@ -156,3 +156,16 @@ You can use this link to see the demo => <https://lightt-ui.netlify.app/componen
 - simple List
 - Stacked List
 - Select List or Checkbox List
+
+### Navigation 
+
+LightUI contain simple Desktop Navigation
+ 
+ - Simple Navigation
+
+### Modal
+
+LightUI contain simple Modal Too Which you can use in desktop
+
+
+
