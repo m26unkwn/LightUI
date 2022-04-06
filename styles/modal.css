@@ -1,0 +1,20 @@
+.modal-backdrop {
+    display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.active{
+    display: block;
+}
+
+.modal-content {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+}
