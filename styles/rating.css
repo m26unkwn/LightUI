@@ -1,0 +1,11 @@
+.rating {
+  display: inline-flex;
+  gap: 6px;
+  padding: 0.5rem 1rem;
+  font-size: 1.4rem;
+}
+
+.rating > i:hover{
+    color: orange;
+    font-weight: 800;
+}
