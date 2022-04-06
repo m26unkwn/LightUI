@@ -4,14 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LightUI |Getting Started</title>
-    <link rel="stylesheet" href="../styles/alert.css" />
+    <title>Grid | Docs</title>
     <link rel="stylesheet" href="../docs.css" />
+    <link rel="stylesheet" href="../styles/grid.css" />
+    <!-- <link rel="stylesheet" href="../styles//card.css" /> -->
+    <!-- <link rel="stylesheet" href="../styles/button.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
   </head>
   <body>
     <main class="main-wrapper flex flex-col">
-      <!-- navbar starts -->
-
+      <!-- navbar starts here -->
       <nav class="nav-wrapper">
         <div class="container nav-inner-wrapper flex ai-center jc-between">
           <h1 class="nav-logo"><a href="../Index.html">LightUI</a></h1>
@@ -38,13 +43,12 @@
           <div class="nav-section flex flex-col ai-start">
             <ul class="nav-section-items flex flex-col ai-start">
               <li>
-                <a class="nav-link-active" href="./getstarted.html"
-                  >Getting Started</a
-                >
+                <a href="./getstarted.html">Getting Started</a>
               </li>
             </ul>
           </div>
           <span class="divider"></span>
+
           <div class="nav-section flex flex-col ai-start">
             <h4 class="nav-section-heading">Components</h4>
             <ul class="nav-section-items flex flex-col ai-start">
@@ -64,10 +68,10 @@
                 <a href="./card.html">Card</a>
               </li>
               <li>
-                <a href="./Image.html">Image</a>
+                <a href="./card.html">Image</a>
               </li>
               <li>
-                <a href="./Input.html">Input</a>
+                <a href="./input.html">Input</a>
               </li>
               <li>
                 <a href="./text.html">Typography</a>
@@ -88,43 +92,46 @@
                 <a href="./rating.html">Rating</a>
               </li>
               <li>
-                <a href="./grid.html">Grid</a>
+                <a class="nav-link-active" href="./grid.html">Grid</a>
               </li>
             </ul>
           </div>
         </aside>
-        <!-- sidebar Documentation and components start -->
+
+        <!-- sidebar Documentation and components end -->
 
         <!-- Documentation of component starts -->
 
         <aside class="doc-wrapper">
           <header class="doc-heading-wrapper flex flex-col">
-            <h1 class="doc-heading">Getting Started</h1>
-            <p class="doc-desc">Welcome into the world of LightUI.</p>
+            <h1 class="doc-heading">Grid</h1>
+            <p class="doc-desc">
+              Use grid when you want to divide screen width into column. Check
+              below some examples of side by side cards.
+            </p>
           </header>
           <section class="doc-preview-wrapper flex flex-col">
-            <h2 class="doc-preview-heading">Introduction</h2>
+            <h2 class="doc-preview-heading">Three Colum Grid</h2>
             <p class="doc-preview-desc">
-              if you are newbie to css? than LightUI is your pikachu!.
+              To create a three colum grid add
+              <span class="highlight-text">grid-col-three</span> class to parent
+              container div and arrange it according to your need with below
+              utility classes.
             </p>
-            <p class="doc-preview-desc">
-              LightUI helps you create Beautiful and easy to manage UI with just
-              your begineer css knowledge.
-            </p>
-          </section>
-          <section class="doc-preview-wrapper flex flex-col">
-            <h2 class="doc-preview-heading">Installation</h2>
-            <p class="doc-preview-desc">
-              In order to introduce LightUI to your project, Copy the Link given
-              below and paste it in the head tag of your html, above all other
-              style sheets.
-            </p>
+
+            <div class="doc-preview doc-preview-row flex jc-center flex-gap">
+              <div class="grid-col-three grid-gap grid-wrapper">
+                <div class="grid-item">ITEM 1</div>
+                <div class="grid-item">ITEM 2</div>
+                <div class="grid-item">ITEM 2</div>
+              </div>
+            </div>
             <code class="doc-preview code">
               <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=sharp&l=javascript&width=732&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%252FYou%2520can%2520use%2520this%2520link%2520to%2520use%2520all%2520the%2520components%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%250A%2509%2509%2509%2509https%253A%252F%252Flightt-ui.netlify.app%252Flightui.css%250A%250A%250A"
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=jsx&width=833&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%2509%2520%2520%253Cdiv%2520class%253D%2522grid-col-three%2520grid-gap%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid-item%2522%253EITEM%25201%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid-item%2522%253EITEM%25202%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid-item%2522%253EITEM%25202%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%250A%2520%2520"
                 style="
                   width: 100%;
-                  height: 227px;
+                  height: 200px;
                   border: none;
                   transform: scale(1);
                   overflow: hidden;
@@ -134,9 +141,8 @@
               </iframe>
             </code>
           </section>
-          <footer class="nav-footer flex jc-end">
-            <a href="./avatar.html"
-              >Avatar
+          <footer class="nav-footer flex flex-start">
+            <a href="./modal.html">
               <svg
                 width="20"
                 height="20"
@@ -145,16 +151,18 @@
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M8.5 5l7 7-7 7"
+                  d="M8.5 19l-7-7  7-7 "
                   stroke="var(--secondary-color)"
                   stroke-width="1.5"
                   stroke-linecap="round"
                   stroke-linejoin="round"
                 ></path>
               </svg>
+              Rating
             </a>
           </footer>
         </aside>
+        <!-- Documentation of component end -->
       </section>
       <!-- main document ends here -->
     </main>
