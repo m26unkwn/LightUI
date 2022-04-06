@@ -169,4 +169,4 @@ LightUI contain simplet Rating so user can use it.
 
 ### Grid
 
-LightUI contain simple three colum grid.
+LightUI contain simple three column grid.
