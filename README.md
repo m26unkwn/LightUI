@@ -168,4 +168,8 @@ LightUI contain simple Desktop Navigation
 LightUI contain simple Modal Too Which you can use in desktop
 
 
+### Rating
+
+LightUI contain simplet Rating so user can use it.
+
 
