@@ -166,3 +166,7 @@ LightUI contain simple Modal Too Which you can use in desktop.
 ### Rating
 
 LightUI contain simplet Rating so user can use it.
+
+### Grid
+
+LightUI contain simple three colum grid.
