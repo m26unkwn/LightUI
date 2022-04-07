@@ -23,7 +23,6 @@ body {
   margin-inline: auto;
 }
 .nav-wrapper {
- 
   backdrop-filter: blur(18px) saturate(171%);
   -webkit-backdrop-filter: blur(18px) saturate(171%);
   background-color: rgba(255, 255, 255, 0.69);
@@ -45,7 +44,6 @@ body {
   color: var(--primary-color);
 }
 .main-doc {
-  margin-top: 5rem;
   position: relative;
   height: 0;
 }
@@ -281,6 +279,13 @@ body {
   background: rgb(243, 243, 243);
   border-radius: 10px;
 }
+
+
+.grid-item {
+  background-color: var(--bg-color-link-active);
+  padding: var(--spacing-lg);
+}
+
 /* wrapper for code */
 
 @media (max-width: 1050px) {
